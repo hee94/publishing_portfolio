@@ -358,19 +358,6 @@ header h3 {
   left: 50%;
   transform: translate(-50%);
 }
-
-.thumbnail_list li:nth-child(5),
-.thumbnail_list li:nth-child(6),
-.thumbnail_list li:nth-child(7),
-.thumbnail_list li:nth-child(8) {
-  margin-bottom: 0;
-}
-.thumbnail_list li:nth-child(8),
-.thumbnail_list li:nth-child(7),
-.thumbnail_list li:nth-child(6) {
-  background-color: var(--line_color);
-}
-
 .thumbnail_list li:nth-child(2) .logo {
   width: 100%;
   top: 32%;
@@ -381,10 +368,6 @@ header h3 {
 }
 .thumbnail_list li:nth-child(5) .logo {
   top: 35%;
-}
-.thumbnail_list li:nth-child(6) .logo {
-  width: 50%;
-  top: 40%;
 }
 
 .thumbnail_list li:hover .thumb {
@@ -397,9 +380,6 @@ header h3 {
   width: 125%;
 }
 .thumbnail_list li:nth-child(3):hover .logo {
-  width: 60%;
-}
-.thumbnail_list li:nth-child(6):hover .logo {
   width: 60%;
 }
 
@@ -471,11 +451,7 @@ header h3 {
 }
 .protfolie2,
 .protfolie3,
-.protfolie4,
-.protfolie5,
-.protfolie6,
-.protfolie7,
-.protfolie8 {
+.protfolie4 {
   opacity: 0;
 }
 .pf_info > div {
@@ -713,7 +689,6 @@ footer {
     width: 100%;
     text-align: center;
     position: relative;
-    /* left: 30%; transform: translate(-40%); */
     font-size: 2rem;
     margin-top: 1rem;
   }
@@ -765,19 +740,6 @@ footer {
     text-align: center;
     padding: 3% 0;
   }
-  .resume_skill {
-    overflow: hidden;
-    width: 100%;
-    height: auto;
-    padding-bottom: 5%;
-  }
-  .resume_skill p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-  }
-  .resume_skill img {
-    width: 100%;
-  }
   .rol_3::before {
     height: 62px;
   }
@@ -791,9 +753,7 @@ footer {
     width: 48%;
   }
   .side_line,
-  .deco3,
-  .slide_wrap li:nth-child(1),
-  .slide_wrap li:nth-child(3) {
+  .deco3 {
     display: none;
   }
   .pf_wrap {
@@ -851,12 +811,6 @@ footer {
     bottom: 8.5%;
     left: 1.5%;
   }
-  .thumbnail_list li:nth-child(5),
-  .thumbnail_list li:nth-child(6),
-  .thumbnail_list li:nth-child(7),
-  .thumbnail_list li:nth-child(8) {
-    margin-bottom: 15px;
-  }
   .pf_linebox {
     width: 80px;
     height: 30px;
@@ -865,10 +819,5 @@ footer {
   }
   .more2 {
     margin-top: 2%;
-  }
-  .slide_btn {
-    width: 100%;
-    margin-top: 25%;
-    padding-left: 15%;
   }
 }
