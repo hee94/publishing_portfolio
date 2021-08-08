@@ -1,0 +1,672 @@
+section,
+main {
+  width: 100%;
+  height: auto;
+  padding-left: var(--gnb_W);
+  padding-bottom: 10%;
+}
+#sub_banner {
+  width: 100%;
+  height: 100vh;
+}
+#sub_banner img {
+  width: 100%;
+}
+.choice_wrap {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fff8d4;
+  border: 1px solid var(--mainC_P);
+  padding-bottom: 10%;
+}
+.menu {
+  display: flex;
+  width: 100%;
+  height: 8%;
+  text-align: center;
+}
+.menu li {
+  flex: 1;
+  cursor: url(../img/cursor.png), url(../img/cursor.cur), auto;
+  padding: 1.5% 0;
+  color: var(--mainC_Y);
+  background-color: var(--mainC_P);
+}
+.menu li.active {
+  color: var(--mainC_R);
+  background-color: #fff8d4;
+}
+.choice {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5% 0;
+  margin-bottom: 5%;
+}
+.choice > li {
+  width: 47%;
+}
+.choice > li:first-child {
+  border: 3px solid var(--mainC_R);
+  background-color: #fbf2f3;
+  padding: 0 3%;
+}
+/* 왼쪽 고른목록박스 시작*/
+.left_title {
+  text-align: center;
+  width: 100%;
+  padding-top: 5%;
+  margin-bottom: 5%;
+}
+.left_title img {
+  width: 80%;
+}
+.item_row {
+  flex-direction: column;
+  width: 85%;
+  height: auto;
+  margin: 0 auto;
+  font-size: var(--fontsize_Ss);
+  padding-top: 5%;
+  text-align: center;
+}
+.item_row > li {
+  /* width: 20%;
+  height: 100%;
+  text-align: center; */
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1% 2% 6% 4%;
+  justify-content: space-between;
+  background: url("../img/sub_subscription/price_underline.png") no-repeat
+    bottom;
+}
+/* .item_color {
+  width: 50%;
+  height: 40%;
+  margin: 0 auto;
+} */
+.delete_btn {
+  /* position: relative;
+  left: 24%;
+  top: -25%; */
+  cursor: pointer;
+  width: 7.2%;
+}
+.item_row > li > p {
+  font-size: var(--fontsize_Ms);
+  font-family: "ELAND_Nice_M";
+}
+/* .item_photo {
+  width: 100%;
+  height: 13%;
+  background: #fff;
+  text-align: center;
+}
+.item_photo > img {
+  width: 24%;
+  position: relative;
+  top: -60%;
+  transform: rotate(90deg);
+} */
+.colorp {
+  color: var(--mainC_P);
+  font-family: "ELAND_Nice_M";
+  font-size: var(--fontsize_L);
+  font-weight: normal;
+  padding: 5% 0;
+}
+.content_box {
+  width: 95%;
+  height: 12%;
+  margin: 0 auto;
+  margin-top: 10%;
+  padding-top: 1.5%;
+  padding-left: 7%;
+  border: 6px dotted var(--mainC_R);
+  font-family: "ELAND_Nice_M";
+  font-size: var(--fontsize_Ms);
+}
+.content_box p {
+  padding: 3% 0;
+}
+.red {
+  color: var(--mainC_R);
+}
+.block {
+  color: var(--font_color);
+  font-size: var(--fontsize_Ms);
+}
+.contenttxt {
+  padding: 0 10%;
+  margin-left: 35%;
+}
+.price_box {
+  width: 100%;
+  text-align: right;
+}
+.price_box img {
+  width: 100%;
+  margin: 0 auto;
+}
+.save {
+  width: 15%;
+  margin-top: 4%;
+}
+.price_box h4 {
+  font-size: var(--fontsize_S);
+  margin-right: 20%;
+  padding-bottom: 2%;
+}
+.price_box h1 {
+  padding-right: 10%;
+  font-size: var(--title_sizeBig);
+  font-family: "ELAND_Nice_M";
+}
+.price_box h4 {
+  text-decoration: line-through;
+}
+.bottom_img {
+  width: 70%;
+  margin-left: 12%;
+}
+/* 왼쪽 끝*/
+.right_title,
+.right_title2 {
+  width: 100%;
+  text-align: center;
+  margin: 1% 0;
+}
+.right_title img {
+  width: 80%;
+}
+.right_title2 img {
+  width: 75%;
+}
+.right_title2 {
+  margin-top: 5%;
+}
+.tap_box {
+  width: 100%;
+  margin: 0 auto;
+}
+.tab_menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.tab_menu li {
+  width: 48%;
+  text-align: center;
+}
+.tab_menu li a {
+  display: block;
+  width: 100%;
+  padding: 6% 0;
+  border: 5px dotted var(--mainC_R);
+  color: var(--mainC_R);
+  font-weight: bold;
+}
+.tab_menu li a.on {
+  background-color: var(--mainC_R);
+  color: #fff;
+}
+.tab_container {
+  width: 100%;
+  height: auto;
+  background-color: #fbf2f3;
+  margin-top: 2%;
+  border: 3px solid var(--mainC_R);
+  position: relative;
+  overflow: hidden;
+}
+#randombox {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 2%;
+  background-color: #fff;
+  display: none;
+  text-align: center;
+  border: 3px solid var(--mainC_R);
+}
+#randombox img {
+  width: 60%;
+}
+.container_in {
+  display: flex;
+  width: 200%;
+}
+.arrow_right {
+  position: absolute;
+  right: 4%;
+  top: 50%;
+  cursor: pointer;
+}
+.arrow_left {
+  position: absolute;
+  left: 4%;
+  top: 50%;
+  transform: rotate(180deg);
+  cursor: pointer;
+  display: none;
+}
+.cho_list,
+.cho_list2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2% 8%;
+  text-align: center;
+}
+.cho_list li,
+.cho_list2 li {
+  width: 23%;
+  padding: 5% 4%;
+  margin: 3% 0;
+  color: #fff;
+  cursor: url(../img/cursor.png), url(../img/cursor.cur), auto;
+  font-size: var(--fontsize_Ms);
+  font-family: "ELAND_Nice_M";
+}
+.tab_container p {
+  font-size: var(--title_size);
+  font-family: "ELAND_Nice_M";
+  text-align: center;
+  padding-top: 4%;
+  color: var(--mainC_R);
+}
+/* 잼컬러 */
+.jam1 {
+  background-color: #a598b0;
+}
+.jam2 {
+  background-color: #f2a989;
+  font-size: var(--fontsize_Ms);
+}
+.jam3 {
+  background-color: #dbd077;
+}
+.jam4 {
+  background-color: #e20101;
+}
+.jam5 {
+  background-color: #ffa643;
+}
+.jam6 {
+  background-color: #edbfc9;
+}
+.jam7 {
+  background-color: #f7e8c1;
+}
+.jam8 {
+  background-color: #d3f28a;
+}
+.spread1 {
+  background-color: #d79f81;
+}
+.spread2 {
+  background-color: #9fc7c0;
+}
+.spread3 {
+  background-color: #d49a9a;
+}
+.spread4 {
+  background-color: #e4ba9b;
+}
+.spread5 {
+  background-color: #d3c479;
+}
+.spread6 {
+  background-color: #9fad96;
+}
+.spread7 {
+  background-color: #b9c9af;
+}
+.spread8 {
+  background-color: #9db5bf;
+}
+
+.calendar {
+  display: flex;
+  width: 100%;
+  height: 12%;
+  padding: 4% 10%;
+  margin: 5% 0;
+  justify-content: space-between;
+}
+.calendar li {
+  width: 22%;
+  height: 100%;
+  text-align: center;
+}
+.calendar li a {
+  width: 100%;
+  height: 100%;
+  line-height: 260%;
+  display: block;
+  border: 3px solid var(--mainC_R);
+  background-color: #fbf2f3;
+  font-family: "ELAND_Nice_M";
+  font-size: var(--fontsize_Lm);
+  color: var(--mainC_Y);
+}
+.choice > li:last-child button {
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  background-color: var(--mainC_P);
+  font-size: var(--fontsize_Ms);
+}
+.choice > li:last-child button:hover {
+  background-color: var(--mainC_R);
+}
+/* 선택창 끝 */
+.benefit,
+.review {
+  width: 95%;
+  margin: 0 auto;
+}
+.benefit h1,
+.review h1 {
+  font-size: var(--title_size);
+  font-family: "ELAND_Nice_M";
+  font-weight: 100;
+}
+.benefit h5,
+.review h5 {
+  color: var(--mainC_Y);
+  margin-top: 0.4%;
+  padding-bottom: 2%;
+}
+.benefit h5::after,
+.review h5::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-top: 20px;
+  background-color: var(--mainC_Y);
+}
+.title_line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--mainC_Y);
+  margin-bottom: 10px;
+  margin-top: -1.5%;
+}
+aside {
+  width: 100%;
+  padding-top: 2.5%;
+  display: flex;
+  text-align: center;
+}
+aside div {
+  width: 50%;
+  margin-bottom: 8%;
+}
+.left img:nth-child(1),
+.right img:nth-child(1) {
+  margin-bottom: 2%;
+  width: 30%;
+}
+.left img:nth-child(2),
+.right img:nth-child(2) {
+  width: 90%;
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.2);
+  opacity: 0.5;
+}
+.left img:nth-child(2):hover,
+.right img:nth-child(2):hover {
+  opacity: 1;
+}
+/* review */
+.review table {
+  width: 100%;
+  margin-top: 2.5%;
+  border-top: 2px solid var(--mainC_Y);
+  border-bottom: 2px solid var(--mainC_Y);
+}
+th {
+  font-family: "ELAND_Nice_M";
+  padding: 1% 0;
+}
+tr {
+  background: #fff;
+  border-bottom: 2px solid var(--mainC_Y);
+}
+td {
+  padding: 1% 0;
+  border-bottom: 2px solid var(--mainC_Y);
+}
+tr td:nth-child(1),
+tr td:nth-child(3),
+tr td:nth-child(4) {
+  text-align: center;
+}
+tr td:nth-child(2) {
+  padding-left: 7%;
+  cursor: url(../img/cursor.png), url(../img/cursor.cur), auto;
+}
+tr td:nth-child(2) img {
+  vertical-align: middle;
+  padding-right: 1%;
+}
+.colory {
+  color: var(--mainC_Y);
+  font-size: 0.7vw;
+  margin-left: 5%;
+}
+.th {
+  background-color: #fff8d4;
+}
+.review_btn {
+  width: 24%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4%;
+  margin-left: 76%;
+}
+.review_btn button {
+  width: 49%;
+  height: 60px;
+  background-color: var(--mainC_P);
+  padding: 5% 0;
+  color: #fff;
+  font-size: var(--fontsize_S);
+  font-weight: bold;
+}
+.review_btn button:hover {
+  background-color: var(--mainC_Y);
+}
+.buybtn{
+  display: block;
+  height: 60px;
+}
+.title{display: none;}
+
+/* 모바일 */
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 8px;
+  }
+  body {
+    min-width: 367px;
+  }
+  main {
+    margin-top: 0;
+    padding: 0;
+  }
+  .title{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10% 0;
+    font-size: var(--title_size);
+  }
+  #sub_banner {
+    display: none;
+  }
+  .item_row > li {
+    background: none;
+    align-items: center;
+  }
+  .delete_btn {
+    cursor: pointer;
+    width: 10%;
+  }
+  .tab_container {
+    width: 100%;
+    height: auto;
+    background-color: #fbf2f3;
+    margin-top: 2%;
+    padding-bottom: 10px;
+    border: 3px solid var(--mainC_R);
+    position: relative;
+    overflow: hidden;
+  }
+  .choice {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 2.5% 0;
+    margin-bottom: 0;
+    position: relative;
+  }
+  .choice > li {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .arrow_right {
+    right: 2%;
+  }
+  .arrow_left {
+    left: 2%;
+  }
+  .cho_list,
+  .cho_list2 {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0.5% 4%;
+  }
+  .cho_list li,
+  .cho_list2 li {
+    width: 48%;
+    padding: 0;
+    padding-top: 25px;
+    height: 60px;
+    margin: 2% 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: var(--fontsize_Ms);
+    font-family: "ELAND_Nice_M";
+  }
+  .bottom_img {
+    display: none;
+  }
+  .item_row > li {
+    padding: 1% 2% 4% 4%;
+  }
+  .price_box h4, .content_box p {
+    font-size: var(--fontsize_Ss);
+  }
+  .price_box h1, .tab_container p {
+    font-size: var(--fontsize_L);
+  }
+  .block, .contenttxt, .item_row > li > p {
+    font-size: var(--fontsize_Ms);
+  }
+  .contenttxt {
+    padding: 0 10%;
+    margin-left: 8%;
+  }
+  .calendar li a {
+    font-size: var(--fontsize_M);
+  }
+  .price_box {
+    padding-bottom: 120px;
+  }
+  .choice > li:last-child button {
+    position: absolute;
+    bottom: 60px;
+    width: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 40px;
+    font-size: var(--fontsize_ms);
+  }
+  .left_title img {
+    width: 50%;
+  }
+  .benefit h1,
+  .review h1 {
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 25px;
+  }
+  .benefit h1 {
+    margin-top: 50px;
+  }
+  .benefit h5,
+  .review h5 {
+    display: none;
+  }
+  aside {
+    flex-direction: column;
+  }
+  aside div {
+    width: 90%;
+    margin: 0 auto 20px auto;
+  }
+  .left img:nth-child(1),
+  .right img:nth-child(1) {
+    display: none;
+  }
+  table tr:last-child,
+  table tr:nth-child(5) {
+    display: none;
+  }
+  .review {
+    margin-top: 50px;
+  }
+  .review_btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5% auto 0 auto;
+  }
+  .review_btn button {
+    width: 49%;
+    height: 40px;
+    font-size: var(--fontsize_Ms);
+    line-height: 10px;
+  }
+  .calendar li a {
+    height: 40px;
+    line-height: 40px;
+    font-size: var(--fontsize_Ms);
+  }
+  .review table {
+    width: 100%;
+  }
+  th {
+    font-family: "ELAND_Nice_M";
+    font-size: 12px;
+    padding: 0;
+  }
+  td {
+    font-size: 12px;
+  }
+  td img {
+    width: 10%;
+  }
+  .choice_wrap{
+    margin-bottom: 20px;
+  }
+}

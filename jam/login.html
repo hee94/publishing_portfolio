@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>잼이꾸덕 : 로그인</title>
+    <link rel="icon" href="img/파비콘.ico" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/variable.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/sub_common.js"></script>
+</head>
+<body>
+    <header class="gnb_wrap">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="img/index/logo.png" alt="logo"></a>
+            </div>
+            <ul class="gnb">
+                <li><a href="story.html">꾸덕스토리</a></li>
+                <li><a href="sub_subscription.html">정기구독</a></li>
+                <li><a href="sub_market_jam.html">꾸덕마켓</a>
+                    <ul class="gnb_submenu">
+                        <li><a href="sub_market_jam.html">꾸덕잼</a></li>
+                        <li><a href="sub_market_spread.html">꾸덕스프레드</a></li>
+                    </ul>
+                </li>
+                <li><a href="event.html">이벤트</a></li>
+                <li><a href="offline.html">매장안내</a></li>
+                <li><a href="support.html">고객지원</a></li>
+            </ul>
+        </nav>
+        <img class="gnb_banner" src="img/index/gnb_char.png" alt="이동배너" >
+
+        <a class="topbtn" href="#">
+            <img class="top_btnhover"
+            src="img/index/topbtn_hover.png" alt="호버">
+            <img class="top_btn" src="img/index/topbtn.png" alt="탑버튼">
+        </a>
+    </header>
+    <div class="top">
+        <ul class="topmenu">
+            <li><a href="login.html">LOGIN</a></li>
+            <li></li>
+            <li><a href="sub_mypage.html">MY PAGE</a></li>
+            <li></li>
+            <li><a href="join.html">JOIN US</a></li>
+        </ul>
+    </div>
+    <div class="mobileMenu">
+        <div class="bars">
+            <a href="#"><img src="img/index/bars.png" alt=""></a>
+        </div>
+        <div class="gnbMobile_wrap">
+            <nav class="gnbMo_wrap">
+                <div class="mobileLogo">
+                    <a href="index.html"><img src="img/index/logo.png" alt="logo"></a>
+                </div>
+                <div class="gnbClose">
+                    <a href="#"><img src="img/index/close.png" alt="close"></a>
+                </div>
+                <div class="gnbMobile">
+                        <ul class="mobileTopmenu">
+                            <li><a href="login.html">LOGIN</a></li>
+                            <li></li>
+                            <li><a href="sub_mypage.html">MY PAGE</a></li>
+                            <li></li>
+                            <li><a href="join.html">JOIN US</a></li>
+                        </ul>
+                        <ul class="gnbMo">
+                            <li><a href="story.html">꾸덕스토리</a></li>
+                            <li><a href="sub_subscription.html">정기구독</a></li>
+                            <li><a href="#">꾸덕마켓</a>
+                                <ul class="gnbMo_submenu">
+                                    <li><a href="sub_market_jam.html">꾸덕잼</a></li>
+                                    <li><a href="sub_market_spread.html">꾸덕스프레드</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="event.html">이벤트</a></li>
+                            <li><a href="offline.html">매장안내</a></li>
+                            <li><a href="support.html">고객지원</a></li>
+                        </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <main>
+        <!-- <article class="topmenu_wrap">
+            <ul class="topmenu">
+                <li><a href="login.html">LOGIN</a></li>
+                <li></li>
+                <li><a href="join.html">JOIN US</a></li>
+            </ul>
+        </article> -->
+        <div class="container">
+            <div class="login_title_box">
+                <h1 class="login_title">로그인</h1>
+                <h2 class="login_subtitle">잼이꾸덕 계정에 로그인 하세요.</h2>
+            </div>
+            <div class="charater_box">
+                <img src="img/login/character.png" alt="꾸덕이">
+            </div>
+            <div class="line1"></div>
+            <article class="login_wrap">
+                <div class="login_box">
+                    <form>
+                        <label>
+                            <p>사용자 이름 또는 메일</p>
+                            <input type="text" id="id" name="id" maxlength="20" placeholder="아이디 입력">
+                            <span class="error_next_box" id="idMsg"></span>
+                        </label>
+                        <label>
+                            <p>비밀번호</p>
+                            <input type="password" id="pw" name="pw" maxlength="20" placeholder="비밀번호 입력">
+                            <span class="error_next_box" id="pwMsg"></span>
+                        </label>
+                        <div class="remember">
+                            <input type="checkbox" id="login_check" name="login_check">
+                            <span>로그인 상태 유지</span>
+                        </div>
+                        <div>
+                            <a href="#" class="login_btn">로그인</a>
+                        </div>
+                        <div>
+                            <a href="join.html" class="join_btn">회원가입</a>
+                        </div>
+                        <div>
+                            <a href="#" class="forget">비밀번호를 잊으셨나요?</a>
+                        </div>
+                    </form>
+                </div>
+            </article>
+            <div class="line1"></div>
+        </div>
+        <div class="alert">
+            <h2>이지혜님 환영합니다!</h2>
+            <a href="#" class="close">확인</a>
+        </div>
+        <div class="forget_alert">
+            <h2>기억을 잘 떠올려보세요!</h2>
+            <a href="#" class="close2">확인</a>
+        </div>
+    </main>
+
+    <footer>
+        <article class="ft_wrap">
+            <div class="ft_logo">
+                <img src="img/index/ft_logo.png" alt="logo">
+            </div>
+            <div class="ft_info">
+                <ul>
+                    <li><a href="#">개인정보보호정책</a></li>
+                    <li><a href="#">사업자정보확인</a></li>
+                    <li><a href="#">이용약관</a></li>
+                </ul>
+                <p>
+                    <small>
+                        상호. (주) 잼이꾸덕<br>
+                        대표. 김현정<br>
+                        통신판매업. 제2021-서울강남-1319호<br>
+                        사업자등록번호. 105-96-01127<br>
+                        Copyrgiht ⓒ 2021 잼이꾸덕 All rights reserved.
+                    </small>
+                </p>
+            </div>
+            <div class="ft_customer">
+                <h2>고객센터</h2>
+                <h1>02-319-1013</h1>
+                <p>
+                    <small>
+                        고객센터 운영시간 <br>
+                        평일 오전 9시~오후6시(주말/공휴일 휴무)<br>
+                        점심 12시~1시
+                    </small>
+                </p>
+            </div>
+        </article>
+    </footer>
+
+</body>
+</html>

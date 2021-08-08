@@ -1,0 +1,68 @@
+main{
+    width: 100%;
+    height: auto;
+    padding-left: var(--gnb_W);
+    background: url(../img/event/bg.png) no-repeat right top;
+    background-size: 1627px 3822px;
+    position: relative;
+    padding-bottom: 150px;
+}
+.title{
+    width: 200px;
+    margin: 0 auto;
+    padding-top: 100px;
+    font-size: var(--title_size);
+    font-family: 'ELAND_Nice_M';
+}
+/* 배너 */
+
+.banner1, .banner2, .banner3, .banner4{
+    width: 1426px;
+    height: 310px;
+    margin: 75px auto;
+    position: relative;
+}
+.banner4{margin-bottom: 0;}
+.wrap1{
+    width: 100%;
+    height: 310px;
+    position: absolute;
+    z-index: 1;
+}
+.wrap2{
+    width: 100%;
+    height: 706px;
+    position: absolute;
+    display: none;
+    z-index: 2;
+}
+.m_banner_wrap{display: none;}
+
+@media screen and (max-width:767px){
+
+    body{min-width: 367px;}
+    .gnb_wrap, .top{display: none;}
+    
+    main{padding: 0; margin-bottom: 50px;}
+    .title{
+        width: 100%;
+        text-align: center;
+        padding: 30px 0;
+        font-size: var(--title_size);
+    }
+    .banner_wrap{display: none;}
+    .m_banner_wrap{
+        display: block;
+        width: 100%;
+    }
+    .m_banner_wrap img{
+        margin-top: 30px;
+        width: 100%;
+    }
+    .m_banner_wrap img:nth-child(1){
+        margin-top: 0;
+    }
+    .m_banner_wrap img:last-child{
+        margin-bottom: 10%;
+    }
+}

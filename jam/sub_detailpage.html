@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>잼이꾸덕 : 제품 상세페이지</title>
+    <link rel="icon" href="img/파비콘.ico" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/jquery.transform2d.js"></script>
+    <link rel="stylesheet" href="css/variable.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub_detailpage.css">
+    <script src="js/sub_common.js" defer></script>
+    <script src="js/sub_detail.js" defer></script>
+</head>
+<body>
+    <header class="gnb_wrap">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="img/index/logo.png" alt="logo"></a>
+            </div>
+            <ul class="gnb">
+                <li><a href="story.html">꾸덕스토리</a></li>
+                <li><a href="sub_subscription.html">정기구독</a></li>
+                <li><a href="sub_market_jam.html">꾸덕마켓</a>
+                    <ul class="gnb_submenu">
+                        <li><a href="sub_market_jam.html">꾸덕잼</a></li>
+                        <li><a href="sub_market_spread.html">꾸덕스프레드</a></li>
+                    </ul>
+                </li>
+                <li><a href="event.html">이벤트</a></li>
+                <li><a href="offline.html">매장안내</a></li>
+                <li><a href="support.html">고객지원</a></li>
+            </ul>
+        </nav>
+        <img class="gnb_banner" src="img/index/gnb_char.png" alt="이동배너" >
+
+        <a class="topbtn" href="#">
+            <img class="top_btnhover"
+            src="img/index/topbtn_hover.png" alt="호버">
+            <img class="top_btn" src="img/index/topbtn.png" alt="탑버튼">
+        </a>
+    </header>
+    <div class="top">
+        <ul class="topmenu">
+            <li><a href="login.html">LOGIN</a></li>
+            <li></li>
+            <li><a href="sub_mypage.html">MY PAGE</a></li>
+            <li></li>
+            <li><a href="join.html">JOIN US</a></li>
+        </ul>
+    </div>
+    <div class="mobileMenu">
+        <div class="bars">
+            <a href="#"><img src="img/index/bars.png" alt=""></a>
+        </div>
+        <div class="gnbMobile_wrap">
+            <nav class="gnbMo_wrap">
+                <div class="mobileLogo">
+                    <a href="index.html"><img src="img/index/logo.png" alt="logo"></a>
+                </div>
+                <div class="gnbClose">
+                    <a href="#"><img src="img/index/close.png" alt="close"></a>
+                </div>
+                <div class="gnbMobile">
+                        <ul class="mobileTopmenu">
+                            <li><a href="login.html">LOGIN</a></li>
+                            <li></li>
+                            <li><a href="sub_mypage.html">MY PAGE</a></li>
+                            <li></li>
+                            <li><a href="join.html">JOIN US</a></li>
+                        </ul>
+                        <ul class="gnbMo">
+                            <li><a href="story.html">꾸덕스토리</a></li>
+                            <li><a href="sub_subscription.html">정기구독</a></li>
+                            <li><a href="#">꾸덕마켓</a>
+                                <ul class="gnbMo_submenu">
+                                    <li><a href="sub_market_jam.html">꾸덕잼</a></li>
+                                    <li><a href="sub_market_spread.html">꾸덕스프레드</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="event.html">이벤트</a></li>
+                            <li><a href="offline.html">매장안내</a></li>
+                            <li><a href="support.html">고객지원</a></li>
+                        </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <section id="seclet">
+        <article>
+            <div class="top_wrap">
+                <a class="sidetap"  href="sub_subscription.html">
+                    <img class="top_btn1 sidebtn " src="img/detail_page/detail_top.png" alt="정기구독보기" > <span ">정기구독 <br>알아보기</span>
+                </a>
+                <a class="sidetap" href="sub_market_spread.html">
+                    <img class="top_btn1 sidebtn " src="img/detail_page/detail_top.png" alt="스프레드보기" > <span> 스프레드<br>보러가기</span>
+                </a>
+            </div>
+            <ul class="item_wrap">
+                <li>
+                    <div class="slider">
+                        <ul class="detail_slide">
+                            <li><img src="img/detail_page/detail_img1.png" alt="상품"></li>
+                            <li><img src="img/detail_page/detail_img2.png" alt="상품"></li>
+                            <li><img src="img/detail_page/detail_img3.png" alt="상품"></li>
+                        </ul>
+                    </div>
+                <ul class="slide_btn">
+                    <li class="on"></li>
+                    <li ></li>
+                    <li ></li>
+                </ul>
+                </li>
+                <li>
+                    <div class="title_box">
+                        <h3>맛있어서 너<span class="red">'무 화과'</span>나</h3>
+                    <h1>무화과잼</h1>
+                    </div>
+                    
+                    <p>
+                        <span class="txt1">최대혜택</span>
+                        <span class="red">로그인</span>시 적립혜택제공
+                    </p>
+                    <p>
+                        <span class="txt1">배송정보</span>
+                        3,000원 (우체국택배)<br>
+                        <div class="gray"><small>
+                            제주 및 도서/산간 지역 1~2일 추가 소요<br>30,000이상 구매시 무료
+                        </small></div>
+                    </p>
+                    <select name="volume" id="volume" onchange="handleOnChange(this)">
+                        <option value="0원">용량을 선택하세요</option>
+                        <option value="70g">70g</option>
+                        <option value="180g">180g</option>
+                    </select>
+                    <div class="total">
+                        <span>합계</span>
+                        <span class="total_color">0원</span>
+                    </div>
+                    <div class="item_btn_wrap">
+                        <a href="#">cart</a>
+                        <a href="#">buy now</a>
+                    </div>
+                </li>
+            </ul>
+        </article>
+        </section>
+    <main>
+        <section id="sub_detail1">
+                <p class="text1">언제 어디서나 간편하게!</p>
+                <ul class="detail_img">
+                    <li class="detail_title1"><img src="img/detail_page/detail_title1.png" alt="꾸덕잼" > </li>
+                    <li class="detail_title2"><img src="img/detail_page/detail_title2.png" alt="앤드" > </li>
+                    <li class="detail_title3"><img src="img/detail_page/detail_title3.png" alt="꾸덕스프레드" > </li>
+                    <li class="detail_title4"><img src="img/detail_page/detail_txt.png" alt="텍스트" > </li>
+                    <li class="tube">
+                        <div class="detail_action1">
+                            <img src="img/detail_page/detail_itemon.png" alt="제품이미지" >
+                        </div>
+                        <div class="detail_action2"><img src="img/detail_page/detail_jam.png" alt="제품이미지" ></div>
+                        </li>
+                    <li class="detail_action3"><img src="img/detail_page/detail_cap.png" alt="제품이미지" ></li>
+                    <li class="text2"><p>"튜브형으로 위생적인 잼이꾸덕"</p></li>
+                    <li class="text3"><p>스푼이나 나이프를 여러 번 넣었다 보관해 둔 잼을<br>다시 먹으려고 꺼냈을 때, <br>왠지 찜짐했던 그 기분을 이제는 버리세요</p></li>
+                    <li class="detail_txtaction1"><img src="img/detail_page/detail_txt_action1.png" alt="텍스트" ></li>
+                    <li class="detail_txtaction2">
+                        <img  src="img/detail_page/detail_txt_action2.png" alt="텍스트" ></li>
+                </ul>
+            
+        </section>
+        <section id="sub_detail2">
+            <div class="point_wrap">
+                <h1>잼이꾸덕's &nbsp; 3 Points</h1>
+                <p>보존료없이 신선하게<br>유니크한 맛으로 더 새롭게</p>
+                <ul class="point_ico">
+                    <li>
+                        <div><img src="img/detail_page/detail_point_ico1.png" alt="포인트1"></div>
+                        <p>
+                            <h3>설탕대신</h3>
+                            사과농축액으로 당도조절
+                        </p>
+                    </li>
+                    <li>
+                        <div><img src="img/detail_page/detail_point_ico2.png" alt="포인트2"></div>
+                        <p>
+                            <h3>무색소</h3>
+                            재료 본연의 색 그대로
+                        </p>
+                    </li>
+                    <li>
+                        <div><img src="img/detail_page/detail_point_ico3.png" alt="포인트3"></div>
+                        <p>
+                            <h3>무첨가</h3>
+                            방부제 대신 레몬즙 사용
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="sub_detail3">
+            <div class="item_info">
+                <ul>
+                    <li><img src="img/item_img/jam_2.png" alt="무화과잼"></li>
+                    <li>
+                        <h1>맛있어서 너<span class="span">'무 화과'</span>나<br>무화과잼</h1>
+                        <p>
+                            평범한 무화과잼은 이제 잊어주세요!<br>
+                            <strong>신선한 무화과가 80%듬뿍</strong><br>
+                            들어간 잼이꾸덕만의 완벽한 무화과잼
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="sub_detail4">
+            <div class="detail4_wrap">
+                <img src="img/detail_page/detail_info.png" alt="영양정보">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <article class="ft_wrap">
+            <div class="ft_logo">
+                <img src="img/index/ft_logo.png" alt="logo">
+            </div>
+            <div class="ft_info">
+                <ul>
+                    <li><a href="#">개인정보보호정책</a></li>
+                    <li><a href="#">사업자정보확인</a></li>
+                    <li><a href="#">이용약관</a></li>
+                </ul>
+                <p>
+                    <small>
+                        상호. (주) 잼이꾸덕<br>
+                        대표. 김현정<br>
+                        통신판매업. 제2021-서울강남-1319호<br>
+                        사업자등록번호. 105-96-01127<br>
+                        Copyrgiht ⓒ 2021 잼이꾸덕 All rights reserved.
+                    </small>
+                </p>
+            </div>
+            <div class="ft_customer">
+                <h2>고객센터</h2>
+                <h1>02-319-1013</h1>
+                <p>
+                    <small>
+                        고객센터 운영시간 <br>
+                        평일 오전 9시~오후6시(주말/공휴일 휴무)<br>
+                        점심 12시~1시
+                    </small>
+                </p>
+            </div>
+        </article>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,400 @@
+@font-face {
+  font-family: "ELAND_Nice_M";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Nice_M.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ELAND_Choice_B";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_B.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ELAND_Choice_M";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ELAND_Choice_L";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_L.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  min-width: 1024px;
+  color: var(--font_color);
+  font-family: "ELAND_Choice_M";
+  font-size: var(--fontsize_S);
+}
+a {
+  text-decoration: none;
+  color: var(--font_color);
+  cursor: url(../img/cursor.png), url(../img/cursor.cur), auto;
+}
+ul {
+  list-style: none;
+}
+button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: url(../img/cursor.png), url(../img/cursor.cur), auto;
+}
+img {
+  border: 0;
+  vertical-align: top;
+}
+/* 리셋 */
+.mobileMenu{display: none;}
+.m_logo{display: none;}
+.topmenu {
+  display: flex;
+  position: absolute;
+  top: 18px;
+  right: 3.6%;
+  z-index: 999;
+  width: 200px;
+  height: auto;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.topmenu li {
+  margin-right: 5%;
+  margin-top: 1px;
+}
+.topmenu li:nth-child(2),
+.topmenu li:nth-child(4) {
+  width: 2px;
+  height: 15px;
+  margin-top: 0;
+  background-color: #000;
+}
+/* 좌측상단 로그인 */
+.line {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 90px;
+  background: url("../img/index/bg_line.png") no-repeat center;
+}
+.gnb_wrap {
+  position: fixed;
+  z-index: 9999;
+  width: var(--gnb_W);
+  min-width: 220px;
+  height: 100%;
+  padding: 2%;
+  background: url("../img/index/bg_gnb.png");
+  font-family: "ELAND_Nice_M";
+  font-size: var(--fontsize_M);
+}
+nav {
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  border: 5px solid #000;
+}
+.gnb {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30%;
+  margin-left: 11%;
+  height: 80%;
+}
+.gnb > li > a {
+  display: block;
+  padding: 6%;
+  margin-top: 25%;
+}
+.gnb li ul {
+  text-align: left;
+  font-size: var(--fontsize_S);
+}
+.gnb li ul li:first-child {
+  margin-bottom: 10%;
+}
+.gnb_submenu {
+  padding: 8% 5%;
+  display: none;
+}
+.gnb_submenu li a {
+  padding-bottom: 8%;
+}
+/* .gnb > li:hover .gnb_submenu {
+  display: block;
+} */
+.logo {
+  width: 100%;
+  margin-top: 10%;
+}
+.logo img {
+  width: 100%;
+}
+.gnb_banner {
+  position: absolute;
+  display: none;
+  bottom: 0;
+  left: 30%;
+  width: 80%;
+}
+.top_btn {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  width: 4%;
+  display: none;
+}
+.top_btnhover {
+  position: fixed;
+  right: 5.5%;
+  bottom: 5.5%;
+  width: 3%;
+  display: none;
+}
+/* .topbtn:hover .top_btnhover {
+  bottom: 10%;
+} */
+/* gnb end */
+footer {
+  width: 100%;
+  height: 350px;
+  padding-left: 16%;
+  background: #655f52;
+}
+.ft_wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 10% 0;
+  color: #fff;
+}
+.ft_logo {
+  flex: 1;
+  margin-left: 5%;
+  padding-left: 2%;
+}
+.ft_logo img {
+  width: 70%;
+}
+.ft_info {
+  flex: 1;
+  padding-left: 5%;
+}
+.ft_info ul {
+  display: flex;
+  margin-bottom: 20px;
+  font-size: var(--fontsize_S);
+  font-family: "ELAND_Nice_M";
+}
+.ft_info ul li {
+  margin-right: 4%;
+}
+.ft_info ul li:last-child {
+  margin-right: 0;
+}
+.ft_info ul li:first-child a {
+  color: var(--mainC_Y);
+}
+.ft_customer {
+  flex: 1;
+  padding-left: 6%;
+  height: 162px;
+}
+.ft_customer h2 {
+  margin-bottom: 10px;
+  font-family: "ELAND_Nice_M";
+}
+.ft_customer h1 {
+  margin-bottom: 10px;
+  font-size: 2.3rem;
+  font-size: var(--fontsize_L);
+  font-family: "ELAND_Nice_M";
+}
+small{
+  font-size: var(--fonsize_Ss);
+  line-height: 2.5rem;
+}
+
+
+
+@media screen and (max-width:800px){
+  html {font-size: 8px;}
+  body{
+    min-width: 367px;
+}
+.gnb_wrap, .top{display: none;}
+.mobileMenu{
+  display: block;
+  position: relative;
+}
+.bars{
+  position: fixed;
+  top: 2%; left: 2%;
+  z-index: 99;
+}
+.m_logo{
+  display: block;
+  position: absolute;
+  z-index: 999;
+  left: 5%; top: 35vh;
+}
+.m_logo img{
+  width: 75%;
+}
+.gnbMobile_wrap{
+  display: block;
+  position: fixed;
+  top: 0; left: -67%;
+  z-index: 9999;
+  width: 67%;
+  min-width: 220px;
+  height: 100%;
+  background: url("../img/index/bg_gnb.png");
+}
+.gnbMo_wrap {
+  width: 90%;
+  height: 96%;
+  margin: 4% auto;
+  border: 5px solid #000;
+  padding: 7%;
+  position: relative;
+}
+.mobileLogo{
+  width: 80%;
+  margin: 15% auto;
+  text-align: center;
+}
+.mobileLogo img{
+  width: 100%;
+}
+.gnbClose{
+  position: absolute;
+  top:  2%; right: 3%;
+}
+.mobileTopmenu{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: 10% auto;
+  font-family: "ELAND_Nice_M";
+  text-align: center;
+}
+.mobileTopmenu ul{
+  width: 100%;
+  margin: 0 auto;
+}
+.mobileTopmenu li {
+  margin-right: 2.5%;
+  margin-top: 1px;
+}
+.mobileTopmenu li:nth-child(2),
+.mobileTopmenu li:nth-child(4) {
+  width: 2px;
+  height: 15px;
+  margin-top: 0;
+  background-color: #000;
+}
+.gnbMo {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  font-size: var(--fontsize_Ms);
+  font-family: "ELAND_Nice_M";
+}
+.gnbMo > li > a {
+  display: block;
+  width: 100%;
+  margin-top: 15%;
+  text-align: center;
+}
+.gnbMo li ul li:first-child {
+  margin-bottom: 10%;
+}
+.gnbMo_submenu {
+  padding: 5% 0%;
+  display: none;
+  font-size: var(--fontsize_S);
+  text-align: center;
+}
+.gnbMo_submenu li a {
+  padding-bottom: 8%;
+}
+
+footer {
+  height:500px;
+  padding-left: 0;
+}
+.ft_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 0;
+  text-align: center;
+}
+.ft_logo {
+  flex: none;
+  width: 100%;
+  margin-top: 0%;
+  text-align: center;
+  padding: 0;
+  margin-left: 0;
+}
+.ft_logo img {
+  width: 50%;
+}
+.ft_info {
+  flex: none;
+  padding-left: 0;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: -55px;
+}
+.ft_info ul {
+  margin-bottom: 20px;
+  font-size: var(--fontsize_S);
+  justify-content: center;
+}
+.ft_info ul a{
+  display: block;
+}
+.ft_info small{
+  font-size: var(--fontsize_S);
+}
+.ft_customer {
+  flex: none;
+  padding-left: 0;
+  width: 100%;
+  height: auto;
+  margin-top: -70px;
+}
+.ft_customer h2 {
+  font-size: var(--fontsize_M);
+  margin-bottom: 1.5%;
+}
+.ft_customer h1 {
+  margin-bottom: 1%;
+  font-size: var(--fontsize_Lm);
+}
+.ft_customer small{
+  font-size: var(--fontsize_S);
+  line-height: 2.8rem;
+}
+}

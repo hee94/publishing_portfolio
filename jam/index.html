@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>잼이꾸덕</title>
+    <link rel="icon" href="img/파비콘.ico" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/jquery.transform2d.js"></script>
+    <link rel="stylesheet" href="css/variable.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/index.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/wheel.js"></script>
+    <script src="js/card.js"></script>
+</head>
+<body>
+    <header class="gnb_wrap">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="img/index/logo.png" alt="logo"></a>
+            </div>
+            <ul class="gnb">
+                <li><a href="story.html">꾸덕스토리</a></li>
+                <li><a href="sub_subscription.html">정기구독</a></li>
+                <li><a href="sub_market_jam.html">꾸덕마켓</a>
+                    <ul class="gnb_submenu">
+                        <li><a href="sub_market_jam.html">꾸덕잼</a></li>
+                        <li><a href="sub_market_spread.html">꾸덕스프레드</a></li>
+                    </ul>
+                </li>
+                <li><a href="event.html">이벤트</a></li>
+                <li><a href="offline.html">매장안내</a></li>
+                <li><a href="support.html">고객지원</a></li>
+            </ul>
+        </nav>
+        <img class="gnb_banner" src="img/index/gnb_char.png" alt="이동배너" >
+
+        <a class="topbtn" href="#">
+            <img class="top_btnhover"
+            src="img/index/topbtn_hover.png" alt="호버">
+            <img class="top_btn" src="img/index/topbtn.png" alt="탑버튼">
+        </a>
+    </header>
+    <div class="top">
+        <ul class="topmenu">
+            <li><a href="login.html">LOGIN</a></li>
+            <li></li>
+            <li><a href="sub_mypage.html">MY PAGE</a></li>
+            <li></li>
+            <li><a href="join.html">JOIN US</a></li>
+        </ul>
+    </div>
+    <div class="mobileMenu">
+        <div class="bars">
+            <a href="#"><img src="img/index/bars.png" alt=""></a>
+        </div>
+        <div class="m_logo">
+            <img src="img/index/ft_logo.png" alt="logo">
+        </div>
+        <div class="gnbMobile_wrap">
+            <nav class="gnbMo_wrap">
+                <div class="mobileLogo">
+                    <a href="index.html"><img src="img/index/logo.png" alt="logo"></a>
+                </div>
+                <div class="gnbClose">
+                    <a href="#"><img src="img/index/close.png" alt="close"></a>
+                </div>
+                <div class="gnbMobile">
+                        <ul class="mobileTopmenu">
+                            <li><a href="login.html">LOGIN</a></li>
+                            <li></li>
+                            <li><a href="sub_mypage.html">MY PAGE</a></li>
+                            <li></li>
+                            <li><a href="join.html">JOIN US</a></li>
+                        </ul>
+                        <ul class="gnbMo">
+                            <li><a href="story.html">꾸덕스토리</a></li>
+                            <li><a href="sub_subscription.html">정기구독</a></li>
+                            <li><a href="#">꾸덕마켓</a>
+                                <ul class="gnbMo_submenu">
+                                    <li><a href="sub_market_jam.html">꾸덕잼</a></li>
+                                    <li><a href="sub_market_spread.html">꾸덕스프레드</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="event.html">이벤트</a></li>
+                            <li><a href="offline.html">매장안내</a></li>
+                            <li><a href="support.html">고객지원</a></li>
+                        </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- gnb와 상단로그인부분으로 기본적으로 모든페이지에 들어가야합니다. -->
+    <main>
+        <section class="js_mainbox">
+            <ul class="main_title">
+                <li><img src="img/index/title_main_m.png" alt="title"></li>
+                <li><img src="img/index/title_main_A.png" alt="title"></li>
+                <li><img src="img/index/title_main_K.png" alt="title"></li>
+                <li><img src="img/index/title_main_E.png" alt="title"></li>
+                <li><img src="img/index/title_main_L.png" alt="title"></li>
+                <li><img src="img/index/title_main_I.png" alt="title"></li>
+                <li><img src="img/index/title_main_F.png" alt="title"></li>
+                <li><img src="img/index/title_main_E.png" alt="title"></li>
+                <li><img src="img/index/title_main_F.png" alt="title"></li>
+                <li><img src="img/index/title_main_U.png" alt="title"></li>
+                <li><img src="img/index/title_main_N.png" alt="title"></li>
+            </ul>
+            <figure>
+                <img src="img/index/img_main_deco1.png" alt="백그라운드이미지">
+                <img src="img/index/img_main_deco2.png" alt="백그라운드이미지">
+                <img src="img/index/img_main_deco3.png" alt="백그라운드이미지">
+                <img src="img/index/img_main_deco4.png" alt="백그라운드이미지">
+            </figure>
+            <div class="main_title2">
+                <img src="img/index/title_main.png" alt="타이틀">
+            </div>
+            <div class="line"></div>
+            <div class="char1">
+                <img src="img/index/img_char_action.png" alt="캐릭터1">
+            </div>
+            <div class="char2">
+                <img src="img/index/img_char_action2.png" alt="캐릭터2">
+            </div>
+            <ul class="scroll_btn">
+                <li class="on" ><a href="#"></a></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+    </main>
+    <section id="sec1" >
+        <article class="delivery">
+                <div class="sec1_title">
+                    <img src="img/index/img_sec1_title.png" alt="정기구독">
+                </div>
+                <p>맛있는 잼과 스프레드를 다양하게 매달 즐기자! <br>
+                    잼이꾸덕의 제품을 매달 정기적으로 배달받는 서비스 입니다.
+                </p>
+            <ul class="delivery_ico">
+                <li>
+                    <img src="img/index/sec1_ico1.png" alt="아이콘">
+                    <span>날짜선택</span>
+                    </li>
+                <li>
+                    <img src="img/index/sec1_ico2.png" alt="아이콘">
+                    <span>원하는 맛 선택</span>
+                </li>
+                <li>
+                        <img src="img/index/sec1_ico3.png" alt="아이콘">
+                    <span>결제</span>
+                    </li>
+                <li>
+                    <img src="img/index/sec1_ico4.png" alt="아이콘">
+                    <span>원하는날 배송</span>
+                </li>
+            </ul>
+            <button class="sec1_btn">
+                <a href="sub_subscription.html">  정기구독 하러가기</a>
+            </button>
+        </article>
+        <img class="sec1_char1" src="img/index/img_sec1_action.png" alt="캐릭터" >
+    </section>
+    <section id="sec2">
+        <article class="market_wrap">
+            <div class="sec2_title">
+                <img src="img/index/img_sec2_title.png" alt="꾸덕마켓">
+            </div>
+            <div class="sec2_box">
+                <div class="sec2_char_left">
+                    <img src="img/index/sec2_char_jam.png" alt="캐릭터">
+                </div>
+                <div class="sec2_jam">
+                    <img src="img/index/sec2_jam_img.png" alt="꾸덕잼">
+                    <button class="sec2_jambtn">
+                        <a href="sub_market_jam.html">
+                            더 알아보기
+                        </a>
+                        </button>
+                </div>
+            
+                <div class="sec2_spread">
+                    <img src="img/index/sec2_spread_img.png" alt="꾸덕스프레드">
+                    <button class="sec2_spreadbtn">
+                        <a href="sub_market_spread.html">
+                            더 알아보기
+                        </a>
+                    </button>
+                </div>
+            
+                <div class="sec2_char_right">
+                    <img src="img/index/sec2_char_spread.png" alt="캐릭터">
+                </div>
+            </div>
+        </article>
+    </section>
+    <section id="sec3">
+        <article class="recipe_wrap">
+            <div class="sec3_title">
+                <img src="img/index/img_sec3_title.png" alt="꾸덕레시피">
+            </div>
+            <ul class="recipe_list">
+                <li>
+                    <img src="img/index/recipe_img1.png" alt="딸기티라미슈">
+                    <h4>딸기티라미슈</h4>
+                </li>
+                <li>
+                    <img src="img/index/recipe_img2.png" alt="딸기쉬폰케이크">
+                    <h4>딸기쉬폰케이크</h4>
+                </li>
+                <li>
+                    <img src="img/index/recipe_img3.png" alt="초코바나나크로와상">
+                    <h4>초코바나나 크로와상</h4>
+                </li>
+            </ul>
+            <div class="recipe_btn">
+            </div>
+        </article>
+    </section>
+    <section id="sec4" >
+        <article class="howto_wrap">
+            <div class="howto_img">
+                <img src="img/index/recipe_img2.png" alt="딸기쉬폰케이크">
+            </div>
+            <div class="howto_info">
+                <img class="sec4_title" src="img/index/img_sec4_title.png" alt="만드는방법">
+                <ol>
+                    <li>계란을 풀어 설탕과 꿀을 추가해 잘 섞이도록 저어줍니다.</li>
+                    <li>뜨거운물이 담긴 냄비에 계란볼을 올려 중탕하며 약 40도가지 온도를 높여줍니다.</li>
+                    <li>불을 내려주고, 우오와 버터볼을 올려 중탕해둡니다</li>
+                    <li>핸드믹서 중-고속으로 뽀얗게 거품을 올려줍니다</li>
+                    <li>휘퍼가 지나간 자리가 보인다면 저속으로 낮춰 1분 기포정리를 해줍니다</li>
+                    <li>체친 가루류를 세번에 걸쳐 추가하고, 가루를 넣을대마다 퍼올리듯 섞어주세요.</li>
+                    <li>중탕해둔 버터와 우유에 도량의 반죽을 덜어 섞어줍니다</li>
+                    <li>남은 반죽에 골고루 뿌려 주걱으로 퍼올리듯 가볍게 섞어주세요.</li>
+                    <li>준비된 팬에 반죽을 전부 팬닝한 후 평평하게 펼쳐줍니다</li>
+                    <li>팬을 바닥에 탕탕쳐 기포를 정리해주세요</li>
+                </ol>
+                <ul class="sec4_ico">
+                    <li><img class="sec4_ico_hover" src="img/index/sec4_ico1.png" alt="재료"><div>재료보기</div></li>
+                    <li><img src="img/index/sec4_ico2.png" alt="양"><div>2인분</div></li>
+                    <li><img src="img/index/sec4_ico3.png" alt="시간"><div>70분 이내</div></li>
+                    <li><img src="img/index/sec4_ico4.png" alt="난이도"><div>중급</div></li>
+                </ul>
+                <div class="speech_bubble">
+                    <p>딸기, 생크림, 빵, 접시</p>
+                </div>
+                <a href="https://www.youtube.com/watch?v=1uY4fQIfXa0" class="sec4_btn"> 레시피 더보러가기
+                </a>
+            </div>
+        </article>
+    
+    </section>
+    <section id="sec5">
+        <article class="brand_wrap">
+            <img class="sec5_title" src="img/index/sec5_title.png" alt="타이틀">
+            <img  class="sec5_logo" src="img/index/sec5_logo.png" alt="logo">
+            <p>다른 무엇도 아닌 진한달콤함이 꼭 필요한 날이 있죠<br>그런 날에 잼이꾸덕을 추천드려요</p>
+            <ul class="sec5_ico">
+                <li>
+                    <img src="img/index/sec5_ico1.png" alt="설탕no">
+                    <h5>No Added Suger</h5>
+                    <h4>설탕을 더하지 않고</h4>
+                </li>
+                <li>
+                    <img src="img/index/sec5_ico2.png" alt="간편">
+                    <h5>Ready To Eat</h5>
+                    <h4>간편하게</h4>
+                </li>
+                <li>
+                    <img src="img/index/sec5_ico3.png" alt="매달">
+                    <h5>Every Month</h5>
+                    <h4>매달</h4>
+                </li>
+                <li>
+                    <img src="img/index/sec5_ico4.png" alt="충전">
+                    <h5>Suger Charge</h5>
+                    <h4>당충전</h4>
+                </li>
+            </ul>
+        </article>
+    </section>
+    <section id="sec6">
+        <article class="evnet_wrap">
+            <h1>잼이꾸덕&nbsp;#해시태그&nbsp;#이벤트</h1>
+            <p>인스타그램, 페이스북에서 <span class="red">#잼이꾸덕</span>을 태그해주세요.<br>추첨을 통해 정기구독 시 받을 수 있는 랜덤박스를 보내드립니다!</p>
+            <div class="day">2021.04.06~2021.07.05</div>
+            <div class="event_deco">
+                <div class="event1">
+                    <img src="img/index/sec6_boximg1.png" alt="선물박스">
+                    <img src="img/index/sec6_boximg2.png" alt="선물박스">
+                </div>
+                <div class="event2">
+                    <img src="img/index/sec6_deco.png" alt="">
+                </div>
+                <span class="event3">
+                    잼이꾸덕<br>태그하고 선물받자!
+                </span>
+            </div>
+        </article>
+    </section>
+    <section id="sec7">
+        <article class="off_wrap">
+            <div class="sec5_title">
+                <img src="img/index/img_sec7_title.png" alt="오프라인매장">
+            </div>
+            <ul class="off_list">
+                <li>
+                    <img src="img/index/sec7_off_img1.png" alt="1호점">
+                    <img class="deco" src="img/index/sec7_img_deco.png" alt="오프라인용" >
+                    <div>인생을 잼있게 (을지로점)</div>
+                </li>
+                <li>
+                    <img src="img/index/sec7_off_img2.png" alt="2호점">
+                    <img class="deco" src="img/index/sec7_img_deco.png" alt="오프라인용" >
+                    <div>레이디스 앤 잼틀맨 (신사 가로수길점)</div>
+                </li>
+                <li>
+                    <img src="img/index/sec7_off_img3.png" alt="3호점">
+                    <img class="deco" src="img/index/sec7_img_deco.png" alt="오프라인용" >
+                    <div>잼꾸옵서예 (제주도점)</div>
+                </li>
+            </ul>
+            <button class="sec7_btn">
+                <a href="offline.html">매장 위치 보러가기</a>
+            </button>
+        </article>
+    </section>
+    <footer>
+        <article class="ft_wrap">
+            <div class="ft_logo">
+                <img src="img/index/ft_logo.png" alt="logo">
+            </div>
+            <div class="ft_info">
+                <ul>
+                    <li><a href="#">개인정보보호정책</a></li>
+                    <li><a href="#">사업자정보확인</a></li>
+                    <li><a href="#">이용약관</a></li>
+                </ul>
+                <p>
+                    <small>
+                        상호. (주) 잼이꾸덕<br>
+                        대표. 김현정<br>
+                        통신판매업. 제2021-서울강남-1319호<br>
+                        사업자등록번호. 105-96-01127<br>
+                        Copyrgiht ⓒ 2021 잼이꾸덕 All rights reserved.
+                    </small>
+                </p>
+            </div>
+            <div class="ft_customer">
+                <h2>고객센터</h2>
+                <h1>02-319-1013</h1>
+                <p>
+                    <small>
+                        고객센터 운영시간 <br>
+                        평일 오전 9시~오후6시(주말/공휴일 휴무)<br>
+                        점심 12시~1시
+                    </small>
+                </p>
+            </div>
+        </article>
+    </footer>
+</body>
+</html>

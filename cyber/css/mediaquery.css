@@ -1,0 +1,263 @@
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  nav ul li:nth-child(2),
+  nav ul li:nth-child(3),
+  nav ul li:nth-child(4),
+  nav ul li:nth-child(5) {
+    display: none;
+  }
+  header {
+    width: 100%;
+  }
+  .main {
+    height: 900px;
+  }
+  nav ul {
+    width: 95%;
+  }
+  .btnbox {
+    width: 30%;
+  }
+  .btn_txt {
+    font-size: 3.8vw;
+  }
+  .m_btn {
+    display: block;
+    font-size: 1.5rem;
+  }
+  .sns {
+    top: 60%;
+  }
+  .consloe {
+    top: 85%;
+    width: 25%;
+    flex-wrap: wrap;
+  }
+  .consloe li {
+    margin-top: 20px;
+    width: 50%;
+  }
+  .sec1 img,
+.sec3img {
+  left: 0;
+}
+.sec2img,
+.sec4img {
+  right: 0;
+}
+.sec2_subtxt,
+.sec4_subtxt { 
+  display: flex; width: 90%; bottom: 0; left: 5%;}
+  .sec3_subtxt {display: flex; width: 90%;
+    right: 5%; }
+  .sec2_subtxt li,
+  .sec3_subtxt li,
+  .sec4_subtxt li {
+    width: 50%;
+    margin-right: 10px;
+    
+  }
+  .bannerbox {
+    width: 100%; padding-left: 50px;
+  }
+  .slide {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .sec6 {
+    padding: 5% 10%;
+  }
+  .sec6 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  .new_box1,
+  .new_box2,
+  .new_box3,
+  .new_box4 {
+    padding: 30px;
+    height: 180px;
+  }
+  .date {
+    margin-top: 20px;
+  }
+  .ft_top,
+  .ft_bottom {
+    width: 80%;
+  }
+  form {
+    flex-direction: column;
+  }
+  .submit {
+    margin-top: 10%;
+    margin-left: 0;
+  }
+  .sec6 {
+    padding: 10% 0;
+  }
+  .ft_bottom ul {
+    width: 100%;
+    font-size: 0.8rem;
+    justify-content: space-between;
+  }
+  .ft_bottom img {
+    width: 300px;
+    margin-top: 50px;
+  }
+  .s1Txt,.s3Txt,.s2Txt,.s4Txt {
+    transform: rotate(0);
+    position: relative;
+    margin: 0 auto;
+  }
+  
+}
+@media screen and (max-width: 768px) {
+  
+  nav ul li:nth-child(2),
+  nav ul li:nth-child(3),
+  nav ul li:nth-child(4),
+  nav ul li:nth-child(5) {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+  }
+  .main {
+    height: 600px;
+  }
+  nav ul {
+    width: 95%;
+  }
+  .m_btn {
+    display: block;
+    font-size: 1.5rem;
+  }
+  .btnbox {
+    width: 45%;
+  }
+  .btn_txt {
+    font-size: 6.5vw;
+  }
+  .m_btn {
+    display: block;
+  }
+  .sns,
+  .consloe {
+    display: none;
+  }
+  .logo {
+    width: 90%;
+    top: 15%;
+  }
+  .main_box {
+    width: 90%;
+  }
+  .main_img:first-child {
+    left: 0;
+    width: 60%;
+  }
+  .main_img:last-child {
+    right: 0;
+    width: 52%;
+  }
+  .sec1 { height: 600px; margin-bottom: 50px;}
+  .sec2,.sec3,.sec4 {
+    margin-bottom:90%;
+    height: 900px;
+  }
+  .sec1 img, .sec2img,.sec4img, .sec3img {
+    display: none;
+  }
+  .s1Txt,.s3Txt,.s2Txt,.s4Txt {
+    transform: rotate(0);
+    width: 100%;
+    position: static;
+    padding:25px;
+    margin-bottom: 50px;
+    text-align: center;
+    
+  }
+  .s3Txt,.s2Txt,.s4Txt{  padding:10px}
+.s3Txt h1, .s2Txt h1,.s4Txt h1 { font-size: 1.8rem; padding: 15px 0; }
+  .s2Txt p ,.s3Txt p , .s4Txt p {display: none;}
+  .s3Txt,.s2Txt,.s4Txt  { height: auto; padding: 0; }
+  
+ .sec2_subtxt , .sec3_subtxt, .sec4_subtxt{
+    width: 100%; 
+    flex-direction: column; position:static;
+    align-items: center;
+  }  
+  .sec2_subtxt li,
+  .sec3_subtxt li,
+  .sec4_subtxt li {
+    width: 90%; margin: 0 auto;
+    padding: 2px;
+    border-radius: 0;
+    margin-bottom: 20px;
+  }
+  .sec2_subtxt li p, .sec3_subtxt li p, .sec4_subtxt li p, .s1Txt p { font-size: 1.2rem;}
+
+.navi {
+    width: 100%;
+    padding: 0 5px;
+  }
+  .navi li a {
+    display: block;
+    color: #02d8f4;
+    font-size: 1.2rem;
+    padding: 5px;
+    transition: color 0.7s;
+  }
+  .mediain li {
+    width: 100%;
+  }
+  .mediain li:nth-child(5),
+  .mediain li:nth-child(4),
+  .mediain li:nth-child(7),
+  .mediain li:nth-child(8) {
+    display: none;
+  }
+  .banner, .date {
+    display: none;
+  }
+  .new_box1,
+  .new_box3 {
+    margin: 2%;
+    width: 45%;
+    height: 200px;
+    padding: 20px;
+    background-color: #f2eb00;
+  }
+  .sec6 {
+    padding: 10% 0;
+  }
+  .newsbox h2 {
+    font-size: 1.2rem;
+  }
+  .new_box2,
+  .new_box4 {
+    display: none;
+  }
+  .ft_top,
+  .line {
+    display: none;
+  }
+  .ft_bottom {
+    width: 100%;
+    padding: 0 5px;
+  }
+  .ft_bottom ul {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .ft_bottom p {
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+  }
+  .ft_bottom img {
+    width: 200px;
+    margin-top: 50px;
+  }
+  
+}

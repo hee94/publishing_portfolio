@@ -1,0 +1,738 @@
+section {
+  width: 100%;
+  height: auto;
+  padding-left: 290px;
+  font-family: 'ELAND_Choice_M'
+}
+section article {
+  width: 100%;
+  height: 100%;
+  padding: 3%;
+  background-color: #f2f2f2;
+}
+.my_info {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 240px;
+  margin: 1% auto;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+.my_info > li {
+  width: 20%;
+  padding: 20px;
+  background-color: #fff;
+}
+.my_info > li:first-child {
+  display: flex;
+  width: 37%;
+  padding: 20px 10px;
+  justify-content: space-between;
+}
+.profile {
+  width: 27%;
+  height: 100%;
+  margin-left: 3%;
+  margin-top: 3%;
+
+}
+.my_info li:first-child img {
+  width: 100%;
+}
+.info1_left {
+  width: 62%;
+  height: 100%;
+  margin-right: 3%;
+  position: relative;
+}
+.info1_left h1{
+  margin-top: 2%;
+  text-align: left;
+  font-size: var(--fontsize_L);
+  font-family: 'ELAND_Choice_B';
+}
+.info1_left h1 span{
+  font-size: var(--fontsize_Lm);
+  font-family: 'ELAND_Choice_L';
+}
+.toggle{
+  width: 100%;
+  height: 30px;
+  margin-top: 20px;
+  text-align: right;
+  font-family: 'ELAND_Choice_L';
+}
+.toggle h5{
+  width: 35%;
+  height: 4vh;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  font-size: var(--fontsize_Ms);
+  font-family: 'ELAND_Choice_L';
+}
+.togglebtn{
+  display: inline-block;
+  margin-right: 10px;
+}
+input[type=checkbox]{
+  display: none;
+}
+label {
+  cursor: url(../img/cursor.png), url(../img/cursor.cur), auto;
+  width: 60px;
+  height: 30px;
+  background: #c7c7c7;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+label:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+input:checked + label {
+  background: #775ea0;
+}
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+label:active:after {
+  width: 30px;
+}
+.info1_btn {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 18%;
+}
+.info1_btn li{
+  width: 48%;
+}
+.info1_btn li a {
+  display: block;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #f2f2f2;
+  font-family: 'ELAND_Choice_M';
+  font-size: var(--fontsize_S);
+  transition: all .2s;
+}
+.info1_btn li:hover a{
+  background-color: var(--mainC_P);
+  color: #fff;
+}
+.speech_bubble1, .speech_bubble2{
+  position: absolute;
+  width: 100%;
+  display: none;
+  background: var(--mainC_R);
+  border-radius: 15px;
+  color: #fff;
+  font-family: 'ELAND_Choice_M';
+  font-size: var(--fontsize_S);
+  text-align: center;
+}
+.speech_bubble1{
+  height: 100%;
+  left: -80px; bottom: -205px;
+}
+.speech_bubble1 h4{
+  margin-top: 20px;
+  font-family: 'ELAND_Choice_M';
+  font-size: var(--fontsize_S);
+}
+.speech_bubble1 h4 span{
+  font-family: 'ELAND_Choice_L';
+}
+.speech_bubble2{
+  left: 80px; bottom: -95px;
+  height: 40%;
+}
+.speech_bubble2 p{
+  font-family: 'ELAND_Choice_L';
+  font-size: var(--fontsize_S);
+  margin-top: 15px;
+}
+.speech_bubble2 p span{
+  font-family: 'ELAND_Choice_M';
+}
+.speech_bubble1::after{
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent var(--mainC_R) transparent;
+}
+.speech_bubble2::after{
+  content: "";
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent var(--mainC_R) transparent;
+}
+
+.my_info > li > h1 {
+  margin-top: 3%;
+  font-size: var(--fontsize_M);
+}
+.icon_box{
+  height: 85px;
+  margin-top: 10%;
+}
+.icon_box img {
+  vertical-align: middle;
+}
+.my_info > li > h4 {
+  margin-top: 13%;
+  font-size: var(--fontsize_S);
+  font-family: 'ELAND_Choice_L';
+}
+.my_info > li > h4 > img{
+  vertical-align:middle;
+  margin-left: 1%;
+}
+.my_info > li:nth-child(3) .icon_box img, .my_info > li:nth-child(4) .icon_box img{
+  margin-top: 6%;
+}
+
+.my_banner_btn{
+  width: 90%;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 3%;
+}
+.info1_right{
+  width: 100%;
+  height: 100%;
+  background-color: #f5a923;
+  display: flex;
+  justify-content:space-evenly;
+}
+.banner_title{
+  font-size: var(--fontsize_M);
+  font-family: 'ELAND_Choice_M';
+  align-self: center;
+}
+.banner_click{
+  font-size: var(--fontsize_S);
+  font-family: 'ELAND_Choice_L';
+  color: #fff;
+  align-self: center;
+}
+.banner_click img{
+  vertical-align: middle;
+  margin-left: 5px;
+}
+/* profile end */
+
+main {
+  width: 100%;
+  height: auto;
+  padding-left: 290px;
+  font-family: 'ELAND_Choice_M'
+}
+main article {
+  width: 90%;
+  height: 100%;
+  margin: 1% auto;
+  padding: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+.my_btn{
+  width: 18%;
+}
+.my_btn h1{
+  font-size: var(--title_size);
+  font-family: 'ELAND_Choice_M';
+  text-align: center;
+  margin-bottom: 50px;
+}
+.tab{
+  width: 100%;
+  height: 120px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.tab a{
+  display: block;
+  width: 100%;
+  height: 60px;
+  background: #f2f2f2;
+  line-height: 60px;
+  font-size: var(--fontsize_Ms);
+  font-family: 'ELAND_Choice_L';
+}
+.tab a.on{
+  background: #775ea0;
+  color: #fff;
+  font-family: 'ELAND_Choice_M';
+}
+.my_btn p{
+  width: 110%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'ELAND_Choice_L';
+  font-size: var(--fontsize_Ss);
+}
+
+.my_list_wrap1{
+  width: 77%;
+  display: none;
+}
+.yellow_line{
+  margin-top: 1%;
+  border-top: 4px dashed #f5a923;
+}
+.my_list1{
+  width: 100%;
+  margin: 5% 0;
+  overflow: hidden;
+  padding: 1%;
+  position: relative;
+}
+.my_list1 h4{
+  font-size: var(--fontsize_Lm);
+  font-family: 'ELAND_Choice_M';
+  margin-bottom: 5%;
+}
+.slider_wrap{
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+.list_slider1{
+  display: flex;
+  width: 300%;
+  height: 100%;
+  background: #f2f2f2;
+  position: relative;
+}
+.list_slider1 li{
+  width:8%;
+  position: relative;
+  margin-left: 2.5%;
+}
+.list_slider1 li img{
+  width: 100%;
+  position: absolute;
+  bottom: 25%; left: 0;
+}
+.list_slider1 li p{
+  width: 100%;
+  position: absolute;
+  bottom: 15%; left: 50%;
+  margin-left: -55%;
+  text-align: center;
+}
+.my_list2{
+  width: 100%;
+  margin: 5% 0;
+  overflow: hidden;
+  padding: 1%;
+  position: relative;
+}
+.my_list2 h4{
+  font-size: var(--fontsize_Lm);
+  font-family: 'ELAND_Choice_M';
+  margin-bottom: 5%;
+}
+.gray{
+  font-size: var(--fontsize_Lm);
+  font-family: 'ELAND_Choice_M';
+  margin-bottom: 1%;
+  color: #9c9c9c;
+}
+.list_slider2{
+  display: flex;
+  width: 300%;
+  height: 100%;
+  background: #f2f2f2;
+  position: relative;
+}
+.list_slider2 li{
+  width: 8%;
+  position: relative;
+  margin-left: 2.5%;
+}
+.list_slider2 li img{
+  width: 100%;
+  position: absolute;
+  bottom: 25%; left: 0;
+}
+.list_slider2 li p{
+  width: 100%;
+  position: absolute;
+  bottom: 15%; left: 50%;
+  margin-left: -55%;
+  text-align: center;
+}
+.prev{
+  display: block;
+  width: 10%;
+  font-size: var(--title_sizeBig);
+  position: absolute;
+  top: 50%; left: 2%;
+  display: none;
+}
+.next{
+  display: block;
+  width: 10%;
+  font-size: var(--title_sizeBig);
+  position: absolute;
+  top: 50%; right: 2%;
+  text-align: right;
+}
+i{color: #969696;}
+
+.my_list_wrap2{
+  width: 77%;
+  display: block;
+}
+.my_list3{
+  width: 100%;
+  margin: 5% 0;
+  position: relative;
+  padding: 1%;
+}
+.my_list3 h4{
+  font-size: var(--fontsize_Lm);
+  font-family: 'ELAND_Choice_M';
+  margin-bottom: 5%;
+  color: #606060;
+}
+.buy_wrap{
+  width: 100%;
+  border: 1px solid var(--mainC_P);
+  padding: 3% 6%;
+}
+.buy_wrap h2{
+  width: 100%;
+  border-bottom: 1px solid var(--mainC_P);
+  padding: 2%;
+  font-size: var(--fontsize_Lm);
+  font-family: 'ELAND_Choice_M';
+  color: var(--font_color);
+}
+.buy_inner{
+  width: 100%;
+  display: flex;
+  padding: 5%;
+  justify-content: space-between;
+}
+.buy_inner li:nth-child(1){
+  flex: 1;
+}
+.buy_inner li:nth-child(2){
+  flex: 1;
+}
+.buy_inner li:nth-child(2) h3{
+  font-size: var(--fontsize_M);
+  font-family: 'ELAND_Choice_L';
+  margin-top: 30px;
+}
+.buy_inner li:nth-child(2) h3:nth-child(1){
+  margin-top: 0;
+}
+.buy_inner li:nth-child(3){
+  flex: 2;
+}
+.buy_inner li:nth-child(3) h3{
+  font-size: var(--fontsize_Ms);
+  font-family: 'ELAND_Choice_M';
+  margin-top: 35px;
+}
+.buy_inner li:nth-child(3) h3:nth-child(1){
+  margin-top: 0;
+}
+.buy_inner li:nth-child(4){
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+}
+.view{
+  display: block;
+  width: 150px;
+  height: 60px;
+  line-height: 60px;
+  background: #f2f2f2;
+  text-align: center;
+  font-size: var(--fontsize_S);
+  font-family: 'ELAND_Choice_B';
+  transition: .4s;
+}
+.view:hover{
+  background: var(--mainC_P);
+  color: #fff;
+}
+
+
+@media screen and (max-width:800px){
+    body{min-width: 367px;}
+    .gnb_wrap, .top{display: none;}
+
+    section {
+      height: auto;
+      padding-left: 0;
+    }
+    section article {
+      width: 100%;
+      height: 100%;
+      padding: 3% 0;
+    }
+    .my_info {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      width: 95%;
+      height: auto;
+      margin: 0 auto;
+    }
+    .my_info > li {
+      width: 32%;
+      padding: 2%;
+      margin-top: 10px;
+    }
+    .my_info > li:first-child {
+      display: flex;
+      width: 100%;
+      margin-top: 0;
+      padding: 2% 4%;
+      justify-content: space-between;
+    }
+    .profile {
+      width: 27%;
+      height: 100%;
+      margin-left: 0;
+      margin-top: 6%;
+    }
+    .info1_left {
+      width: 62%;
+      margin-right: 0;
+    }
+    .info1_left h1{
+      margin-top: 10%;
+      font-size: var(--fontsize_L);
+    }
+    .info1_left h1 span{
+      font-size: var(--fontsize_Lm);
+    }
+    .toggle{
+      margin-top: 10%;
+    }
+    .toggle h5{
+      width: 50%;
+      height: 100%;
+      margin-right: 1%;
+      font-size: var(--fontsize_M);
+      color: #777;
+    }
+    .togglebtn{
+      vertical-align:text-bottom;
+      margin-right: 0;
+    }
+    label {
+      width: 50px;
+      height: 25px;
+    }
+    label:after {
+      width: 20px;
+      height: 20px;
+    }
+    input:checked + label:after {
+      left: calc(100% - 3px);
+    }
+    label:active:after {
+      width: 20px;
+    }
+    .info1_btn {
+      margin-top: 15%;
+    }
+    .info1_btn li{
+      width: 48%;
+    }
+    .info1_btn li a {
+      height: 40px;
+      line-height: 40px;
+      font-size: 1.65rem;
+    }
+    .speech_bubble1{
+      left: -40%; bottom: -105%;
+    }
+    .speech_bubble1 h4{
+      margin-top: 20px;
+      font-size: var(--fontsize_Ms);
+    }
+    .speech_bubble2{
+      left: 10%; bottom: -45%;
+      line-height: 150%;
+    }
+    .speech_bubble2 p{
+      font-size: var(--fontsize_S);
+      margin-top: 7%;
+    }
+    .my_info > li > h1 {
+      margin-top: 10%;
+      font-size: var(--fontsize_M);
+    }
+    .icon_box{
+      width: 80%;
+      height: auto;
+      margin-left: 11%;
+    }
+    .icon_box img {
+      width: 70%;
+      vertical-align: middle;
+      margin-top: 10%;
+    }
+    .my_info > li > h4 {
+      margin: 5%;
+      font-size: var(--fontsize_Ms);
+    }
+    .my_info > li > h4 > img{
+      width: 6%;
+      margin-left: 3%;
+    }
+    .my_info > li:nth-child(3) .icon_box img{margin-top: 25%;}
+    .my_info > li:nth-child(4) .icon_box img{margin-top: 15%;}
+    .my_info > li:nth-child(2) h4{margin-top: 12%;}
+    .my_info > li:nth-child(3) h4{margin-top: 16%;}
+    .my_info > li:nth-child(4) h4{margin-top: 15%;}
+    .my_banner_btn{height: 40px; margin-top: 3%;}
+    .banner_title{
+      width: 42%;
+      text-align: center;
+      font-size: var(--fontsize_S);
+    }
+    .banner_click{font-size: 1.5rem; line-height: 10px;}
+    .banner_click img{
+      width: 3%;
+      margin-left: 1.5%;
+    }
+    /* m.profile end */
+    
+    main {
+      padding-left: 0;
+    }
+    main article {
+      width: 95%;
+      height: auto;
+      margin: 7% auto;
+      padding: 1%;
+      display: flex;
+      flex-direction: column;
+    }
+    .my_btn{width: 100%;}
+    .my_btn h1{
+      font-size: var(--fontsize_L);
+      margin-bottom: 7%;
+    }
+    .tab{
+      width: 100%;
+      height: 60px;
+      display: flex;
+      text-align: center;
+      margin-bottom: 0px;
+    }
+    .tab li{width: 50%;}
+    .tab a{
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      font-size: var(--fontsize_Ms);
+    }
+    .my_btn p{
+      width: 100%;
+      text-align: center;
+      font-size: var(--fontsize_S);
+      margin-bottom: 2%;
+    }
+    .my_list_wrap1{
+      width: 100%;
+      display: none;
+    }
+    .yellow_line{
+      margin-top: 3%;
+      border-top: 4px dashed #f5a923;
+    }
+    .my_list1{
+      margin: 5% 0;
+    }
+    .my_list1 h4{
+      margin-bottom: 5%;
+    }
+    .slider_wrap{
+      width: 100%;
+      height: 160px;
+    }
+    .list_slider1 li{margin-left: 2.4%;}
+    .list_slider1 li img{bottom: 10%;}
+    .list_slider1 li p{display: none;}
+
+    .my_list2{margin: 5% 0;}
+    .gray{
+      margin-bottom: 5%;
+    }
+    .list_slider2 li{margin-left: 2.4%;}
+    .list_slider2 li img{bottom: 10%; left: 0;}
+    .list_slider2 li p{display: none;}
+    .prev{
+      width: 10%;
+      left: 3%;
+      font-size: var(--fontsize_L);
+    }
+    .next{
+      width: 10%;
+      right: 3%;
+      font-size: var(--fontsize_L);
+    }
+    i{color: #bdbdbd;}
+    /* my_list1 end */
+    
+    .my_list_wrap2{width: 100%;}
+    .my_list3{margin: 5% 0;}
+    .my_list3 h4{margin-bottom: 5%;}
+    .buy_inner{padding: 5% 3%;}
+    .buy_inner li:nth-child(2) h3{
+      font-size: var(--fontsize_Ss);
+      margin-top: 50%;
+    }
+    .buy_inner li:nth-child(2) h3:nth-child(1){
+      margin-top: 35%;
+    }
+    .buy_inner li:nth-child(3) h3{
+      font-size: 1.4rem;
+      margin-top: 30%;
+      margin-left: 5%;
+    }
+    .buy_inner li:nth-child(3) h3:nth-child(1){
+      margin-top: 18%;
+    }
+    .buy_inner li:nth-child(4){flex: none;}
+    .view{
+      display: block;
+      width: 60px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 1.6rem;
+      font-family: 'ELAND_Choice_M';
+    }
+}

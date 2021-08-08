@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/파비콘.ico" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/jquery.transform2d.js"></script>
+    <link rel="stylesheet" href="css/variable.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub_market.css">
+    <script src="js/sub_common.js"></script>
+    <script src="js/sub_market_jam.js"></script>
+    <title>꾸덕마켓 : 꾸덕잼</title>
+</head>
+<body>
+    <header class="gnb_wrap">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="img/index/logo.png" alt="logo"></a>
+            </div>
+            <ul class="gnb">
+                <li><a href="story.html">꾸덕스토리</a></li>
+                <li><a href="sub_subscription.html">정기구독</a></li>
+                <li><a href="sub_market_jam.html">꾸덕마켓</a>
+                    <ul class="gnb_submenu">
+                        <li><a href="sub_market_jam.html">꾸덕잼</a></li>
+                        <li><a href="sub_market_spread.html">꾸덕스프레드</a></li>
+                    </ul>
+                </li>
+                <li><a href="event.html">이벤트</a></li>
+                <li><a href="offline.html">매장안내</a></li>
+                <li><a href="support.html">고객지원</a></li>
+            </ul>
+        </nav>
+        <img class="gnb_banner" src="img/index/gnb_char.png" alt="이동배너" >
+
+        <a class="topbtn" href="#">
+            <img class="top_btnhover"
+            src="img/index/topbtn_hover.png" alt="호버">
+            <img class="top_btn" src="img/index/topbtn.png" alt="탑버튼">
+        </a>
+    </header>
+    <div class="top">
+        <ul class="topmenu">
+            <li><a href="login.html">LOGIN</a></li>
+            <li></li>
+            <li><a href="sub_mypage.html">MY PAGE</a></li>
+            <li></li>
+            <li><a href="join.html">JOIN US</a></li>
+        </ul>
+    </div>
+    <div class="mobileMenu">
+        <div class="bars">
+            <a href="#"><img src="img/index/bars.png" alt=""></a>
+        </div>
+        <div class="gnbMobile_wrap">
+            <nav class="gnbMo_wrap">
+                <div class="mobileLogo">
+                    <a href="index.html"><img src="img/index/logo.png" alt="logo"></a>
+                </div>
+                <div class="gnbClose">
+                    <a href="#"><img src="img/index/close.png" alt="close"></a>
+                </div>
+                <div class="gnbMobile">
+                        <ul class="mobileTopmenu">
+                            <li><a href="login.html">LOGIN</a></li>
+                            <li></li>
+                            <li><a href="sub_mypage.html">MY PAGE</a></li>
+                            <li></li>
+                            <li><a href="join.html">JOIN US</a></li>
+                        </ul>
+                        <ul class="gnbMo">
+                            <li><a href="story.html">꾸덕스토리</a></li>
+                            <li><a href="sub_subscription.html">정기구독</a></li>
+                            <li><a href="#">꾸덕마켓</a>
+                                <ul class="gnbMo_submenu">
+                                    <li><a href="sub_market_jam.html">꾸덕잼</a></li>
+                                    <li><a href="sub_market_spread.html">꾸덕스프레드</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="event.html">이벤트</a></li>
+                            <li><a href="offline.html">매장안내</a></li>
+                            <li><a href="support.html">고객지원</a></li>
+                        </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- common end-->
+    <section>
+            <ul class="slide1">
+                <li>
+                    <p class="slide_title">
+                        <img  src="img/sub_market/j_slide_title1.png" alt="잼소개">
+                        <br>잼이꾸덕의 스테디셀러<br>
+                        달콤한 무화과 잼의 매력에<br>
+                        빠져보세요!
+                    </p>
+                    <div class="round_img">
+                        <img src="img/sub_market/round_j1.png" alt="슬라이드이미지">
+                    </div>
+                    <div class="round_in">
+                        <img src="img/sub_market/j_slide_ico1.png" alt="슬라이드" class="in1">
+                        <img src="img/item_img/jam_2.png" alt="슬라이드" class="in2">
+                    </div>
+                </li >
+                <li>
+                    <p class="slide_title">
+                        <img src="img/sub_market/j_slide_title2.png" alt="잼소개">
+                        <br>부드러운 달콤함이 나를 감싸네<br>
+                        올때 사오라하고 싶은맛<br>
+                        올때메론!
+                    </p>
+                    <div class="round_img">
+                        <img src="img/sub_market/round_j2.png" alt="슬라이드이미지">
+                    </div>
+                    <div class="round_in">
+                        <img src="img/sub_market/j_slide_ico2.png" alt="슬라이드" class="in1">
+                        <img src="img/item_img/jam_6.png" alt="슬라이드" class="in2">
+                    </div>
+                </li>
+                <li>
+                    <p class="slide_title">
+                        <img id="sizechange" src="img/sub_market/j_slide_title3.png" alt="잼소개">
+                        <br>상큼한 하루를 보내고 싶을때!<br>
+                        복숭아와 자두의 만남이란<br>
+                        여름이었다.
+                    </p>
+                    <div class="round_img">
+                        <img src="img/sub_market/round_j3.png" alt="슬라이드이미지">
+                    </div>
+                    <div class="round_in">
+                        <img src="img/sub_market/j_slide_ico3.png" alt="슬라이드" class="in1">
+                        <img src="img/item_img/jam_8.png" alt="슬라이드" class="in2">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <ul class="slide_btn">
+            <li class="on"></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+
+    <main>
+        <ul class="market_list">
+            <li>
+                <a href="sub_detailpage.html">
+                    <div class="market_item">
+                        <img src="img/item_img/jam_2.png" alt="무화과잼">
+                    </div>
+                    <p class="market_name">
+                        무화과 잼
+                    </p>
+                    <div><small>70g 4800원 / 180g 8700원</small></div>
+                </a>
+            </li>
+            <li>
+                <a href="sub_detailpage.html">
+                    <div class="market_item">
+                        <img src="img/item_img/jam_3.png" alt="믹스베리잼">
+                    </div>
+                    <p class="market_name"> 믹스베리 잼</p>
+                    <div><small>70g 4800원 / 180g 8700원</small></div>
+                </a>
+            </li>
+            <li>
+                <a href="sub_detailpage.html">
+                    <div class="market_item">
+                        <img src="img/item_img/jam_9.png" alt="고구마잼">
+                    </div>
+                    <p class="market_name">고구마 잼</p>
+                    <div><small>70g 4800원 / 180g 8700원</small></div>
+                </a>
+            </li>
+            <li>
+                <a href="sub_detailpage.html">
+                    <div class="market_item">
+                        <img src="img/item_img/jam_4.png" alt="애플시나몬잼">
+                    </div>
+                    <p class="market_name">애플시나몬 잼</p>
+                    <div><small>70g 4800원 / 180g 8700원</small></div>
+                </a>
+            </li>
+            <li>
+                <a href="sub_detailpage.html">
+                    <div class="market_item">
+                        <img src="img/item_img/jam_1.png" alt="당근귤잼">
+                    </div>
+                    <p class="market_name">당근귤 잼</p>
+                    <div><small>70g 4800원 / 180g 8700원</small></div>
+                </a>
+            </li>
+            <li>
+                <a href="sub_detailpage.html">
+                    <div class="market_item">
+                        <img src="img/item_img/jam_8.png" alt="복숭아자두잼">
+                    </div>
+                    <p class="market_name">복숭아자두 잼</p>
+                    <div><small>70g 4800원 / 180g 8700원</small></div>
+                </a>
+            </li>
+            <li > 
+                <img class="banner" src="img/sub_market/market_banner.png" alt="배너">
+            </li>
+            <li>
+                <a href="sub_detailpage.html">
+                    <div class="market_item">
+                        <img src="img/item_img/jam_7.png" alt="참외잼">
+                    </div>
+                    <p class="market_name">
+                        참외 잼
+                    </p>
+                    <div><small>70g 4800원 / 180g 8700원</small></div>
+                </a>
+            </li>
+            <li>
+                <a href="sub_detailpage.html">
+                    <div class="market_item">
+                        <img src="img/item_img/jam_6.png" alt="메론잼">
+                    </div>
+                    <p class="market_name">
+                        메론 잼
+                    </p>
+                    <div><small>70g 4800원 / 180g 8700원</small></div>
+                </a>
+            </li>
+            <li>
+                <a href="sub_detailpage.html">
+                    <div class="market_item">
+                        <img src="img/item_img/jam_5.png" alt="수박잼">
+                    </div>
+                    <p class="market_name">
+                        수박 잼
+                    </p>
+                    <div><small>70g 4800원 / 180g 8700원</small></div>
+                </a>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <article class="ft_wrap">
+            <div class="ft_logo">
+                <img src="img/index/ft_logo.png" alt="logo">
+            </div>
+            <div class="ft_info">
+                <ul>
+                    <li><a href="#">개인정보보호정책</a></li>
+                    <li><a href="#">사업자정보확인</a></li>
+                    <li><a href="#">이용약관</a></li>
+                </ul>
+                <p>
+                    <small>
+                        상호. (주) 잼이꾸덕<br>
+                        대표. 김현정<br>
+                        통신판매업. 제2021-서울강남-1319호<br>
+                        사업자등록번호. 105-96-01127<br>
+                        Copyrgiht ⓒ 2021 잼이꾸덕 All rights reserved.
+                    </small>
+                </p>
+            </div>
+            <div class="ft_customer">
+                <h2>고객센터</h2>
+                <h1>02-319-1013</h1>
+                <p>
+                    <small>
+                        고객센터 운영시간 <br>
+                        평일 오전 9시~오후6시(주말/공휴일 휴무)<br>
+                        점심 12시~1시
+                    </small>
+                </p>
+            </div>
+        </article>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>잼이꾸덕 : 정기구독</title>
+    <link rel="icon" href="img/파비콘.ico" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/jquery.transform2d.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/variable.css">
+    <link rel="stylesheet" href="css/subscription_.css">
+    <script src="js/sub_common.js" defer></script>
+    <script src="js/subscription.js" defer></script>
+
+</head>
+<body>
+    <header class="gnb_wrap">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="img/index/logo.png" alt="logo"></a>
+            </div>
+            <ul class="gnb">
+                <li><a href="story.html">꾸덕스토리</a></li>
+                <li><a href="sub_subscription.html">정기구독</a></li>
+                <li><a href="sub_market_jam.html">꾸덕마켓</a>
+                    <ul class="gnb_submenu">
+                        <li><a href="sub_market_jam.html">꾸덕잼</a></li>
+                        <li><a href="sub_market_spread.html">꾸덕스프레드</a></li>
+                    </ul>
+                </li>
+                <li><a href="event.html">이벤트</a></li>
+                <li><a href="offline.html">매장안내</a></li>
+                <li><a href="support.html">고객지원</a></li>
+            </ul>
+        </nav>
+        <img class="gnb_banner" src="img/index/gnb_char.png" alt="이동배너" >
+
+        <a class="topbtn" href="#">
+            <img class="top_btnhover"
+            src="img/index/topbtn_hover.png" alt="호버">
+            <img class="top_btn" src="img/index/topbtn.png" alt="탑버튼">
+        </a>
+    </header>
+    <div class="top">
+        <ul class="topmenu">
+            <li><a href="login.html">LOGIN</a></li>
+            <li></li>
+            <li><a href="sub_mypage.html">MY PAGE</a></li>
+            <li></li>
+            <li><a href="join.html">JOIN US</a></li>
+        </ul>
+    </div>
+    <div class="mobileMenu">
+        <div class="bars">
+            <a href="#"><img src="img/index/bars.png" alt=""></a>
+        </div>
+        <div class="gnbMobile_wrap">
+            <nav class="gnbMo_wrap">
+                <div class="mobileLogo">
+                    <a href="index.html"><img src="img/index/logo.png" alt="logo"></a>
+                </div>
+                <div class="gnbClose">
+                    <a href="#"><img src="img/index/close.png" alt="close"></a>
+                </div>
+                <div class="gnbMobile">
+                        <ul class="mobileTopmenu">
+                            <li><a href="login.html">LOGIN</a></li>
+                            <li></li>
+                            <li><a href="sub_mypage.html">MY PAGE</a></li>
+                            <li></li>
+                            <li><a href="join.html">JOIN US</a></li>
+                        </ul>
+                        <ul class="gnbMo">
+                            <li><a href="story.html">꾸덕스토리</a></li>
+                            <li><a href="sub_subscription.html">정기구독</a></li>
+                            <li><a href="#">꾸덕마켓</a>
+                                <ul class="gnbMo_submenu">
+                                    <li><a href="sub_market_jam.html">꾸덕잼</a></li>
+                                    <li><a href="sub_market_spread.html">꾸덕스프레드</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="event.html">이벤트</a></li>
+                            <li><a href="offline.html">매장안내</a></li>
+                            <li><a href="support.html">고객지원</a></li>
+                        </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- common end-->
+    <section id="sub_banner">
+        <img src="img/sub_subscription/bg_header.png" alt="정기구독안내">
+    </section>
+    <main>
+        <h2 class="title">정기구독</h2>
+        <div class="choice_wrap">
+            <ul class="menu">
+                <li class="active">주문하기</li>
+                <li>구독자혜택</li>
+                <li>구독자리뷰</li>
+            </ul>
+            <ul class="choice">
+                <li>
+                    <div class="left_title">
+                        <img src="img/sub_subscription/left_title.png" alt="고른잼">
+                    </div>
+                    <ul class="item_row">
+                        <li>
+                            <!-- <div class="jam6 item_color"></div> -->
+                            <p>복숭아자두잼</p>
+                            <img class="delete_btn" src="img/sub_subscription/delete_btn.png" alt="삭제" >
+                            
+                        </li>  
+                    </ul>
+                    <!-- <div class="item_photo" style="visibility: hidden;">
+                        <img src="img/item_img/jam_8.png" alt="잼">
+                    </div> -->
+                    <!-- <h2 class="colorp">잼을 선택해주세요</h2> -->
+                    <div class="content_box">
+                        <p>
+                            용량 <span class="red contenttxt">70g</span> 180g<br>
+                        </p>
+                        <p>
+                            배송 도착일 
+                            <span class="red date contenttxt"></span>
+                        </p>
+                    </div>
+                    <img class="save" src="img/sub_subscription/save.png" alt="save">
+                    <div class="price_box">
+                        <h4 class="red">24,000원</h4>
+                        <h1 class="red">21,600 <span class="block">원</span></h1>
+                        <img src="img/sub_subscription/price_underline.png" alt="line">
+                    </div>
+                    <img class="bottom_img" src="img/sub_subscription/thank_img.png" alt="이미지">
+                </li>
+                <li>
+                    <div class="right_title">
+                        <img src="img/sub_subscription/right_title1.png" alt="잼고르기">
+                    </div>
+                    <div class="tap_box">
+                        <ul class="tab_menu">
+                            <li><a href="#" class="on">MYSELF</a></li>
+                            <li><a href="#">RANDOM</a></li>
+                        </ul>
+                        <div id="randombox">
+                            <img src="img/sub_subscription/random.gif" alt="랜덤박스">
+                        </div>
+                        <div class="tab_container" id="container">
+                            <p class="cho_title">잼</p>
+                            <div class="container_in">
+                                <ul class="cho_list">
+                                    <li class="jam1">
+                                    무화과잼
+                                    </li>
+                                    <li class="jam2">
+                                    믹스베리잼
+                                    </li>
+                                    <li class="jam3">
+                                    고구마잼
+                                    </li>
+                                    <li class="jam4">
+                                    시나몬잼
+                                    </li>
+                                    <li class="jam5">
+                                    당근귤잼
+                                    </li>
+                                    <li class="jam6">
+                                    복숭아자두잼
+                                    </li>
+                                    <li class="jam7">
+                                    참외잼
+                                    </li>
+                                    <li class="jam8">
+                                    메론잼
+                                    </li>
+                                </ul>
+                                <div class="arrow_right">
+                                    <img src="img/sub_subscription/arrow.png" alt="">
+                                </div>
+                                <div class="arrow_left">
+                                    <img src="img/sub_subscription/arrow.png" alt="넘기기">
+                                </div>
+                                <div class="random">
+                                    <img src="" alt="">
+                                </div>
+                                <ul class="cho_list2">
+                                    <li class="spread1">초코바나나</li>
+                                    <li class="spread2">민트초코</li>
+                                    <li class="spread3">꿀홍삼</li>
+                                    <li class="spread4">카라멜</li>
+                                    <li class="spread5">해씨잣</li>
+                                    <li class="spread6">얼그레이녹차</li>
+                                    <li class="spread7">아보코코</li>
+                                    <li class="spread8">솜사탕</li>
+                                </ul>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <div class="right_title2">
+                        <img src="img/sub_subscription/right_title2.png" alt="날짜선택">
+                    </div>
+                    <ul class="calendar">
+                    <li>
+                        <a href="#">
+                            5일                      
+                            </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            15일
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            20일
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            25일
+                        </a>
+                    </li> 
+                    </ul>
+                    <button class="buybtn">구매하기</button>
+                </li>
+            </ul>
+            <article class="benefit">
+                <h1>구독자혜택</h1>
+                <h5>구독하신 고객님들을 위한 혜택이 마련되어 있습니다.</h5>
+                <div class="title_line"></div>
+                <aside>
+                    <div class="left">
+                        <img src="img/sub_subscription/benefit_title1.png" alt="첫번째">
+                            <img src="img/sub_subscription/benefit_banner1.png" alt="배너">
+                    </div>
+                    <div class="right">
+                        <img src="img/sub_subscription/benefit_title2.png" alt="두번째">
+                        <img src="img/sub_subscription/benefit_banner2.png" alt="배너">
+                    </div>
+                </aside>
+            </article>
+            <article class="review">
+                <h1>REVIEW</h1>
+                <h5>이곳은 구독이용 후기를 남기는 공간입니다<br>배송관련 및 구독 취소 문의는 1:1문의에 글을 남겨주세요.</h5>
+                <div class="title_line"></div>
+                <table style="border-collapse:collapse" >
+                    <tr class="th">
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>작성자</th>
+                        <th>작성일</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><img src="img/sub_subscription/review_ico1.png" alt="아이콘">
+                            진짜 너무 맛있는데 예쁘기까지 해서 추천합니다.<span class="colory">사진보기</span></td>
+                        <td>김공주</td>
+                        <td>2021.04.09</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><img src="img/sub_subscription/review_ico2.png" alt="아이콘">
+                            생각보다 작은데, 너무 귀여워요!<span class="colory">사진보기</span></td>
+                        <td>김현정</td>
+                        <td>2021.04.09</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><img src="img/sub_subscription/review_ico4.png" alt="아이콘">
+                            완전 팬이에요!! 정기구독이 편해요!<span class="colory">사진보기</span></td>
+                        <td>김예찬</td>
+                        <td>2021.04.09</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><img src="img/sub_subscription/review_ico3.png" alt="아이콘">
+                            이걸 먹는 나, 너무 귀여워요!<span class="colory">사진보기</span></td>
+                        <td>김유리</td>
+                        <td>2021.04.09</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><img src="img/sub_subscription/review_ico5.png" alt="아이콘">
+                            겁나 중독되는 맛! 구독 꾸욱!<span class="colory">사진보기</span></td>
+                        <td>김서희</td>
+                        <td>2021.04.09</td>
+                    </tr>
+                </table>
+            <div class="review_btn">
+                
+                <button>리뷰 더보기</button><button>리뷰 작성하기</button>
+            </div>
+            </article>  
+        </div>
+    </main>
+    <footer>
+        <article class="ft_wrap">
+            <div class="ft_logo">
+                <img src="img/index/ft_logo.png" alt="logo">
+            </div>
+            <div class="ft_info">
+                <ul>
+                    <li><a href="#">개인정보보호정책</a></li>
+                    <li><a href="#">사업자정보확인</a></li>
+                    <li><a href="#">이용약관</a></li>
+                </ul>
+                <p>
+                    <small>
+                        상호. (주) 잼이꾸덕<br>
+                        대표. 김현정<br>
+                        통신판매업. 제2021-서울강남-1319호<br>
+                        사업자등록번호. 105-96-01127<br>
+                        Copyrgiht ⓒ 2021 잼이꾸덕 All rights reserved.
+                    </small>
+                </p>
+            </div>
+            <div class="ft_customer">
+                <h2>고객센터</h2>
+                <h1>02-319-1013</h1>
+                <p>
+                    <small>
+                        고객센터 운영시간 <br>
+                        평일 오전 9시~오후6시(주말/공휴일 휴무)<br>
+                        점심 12시~1시
+                    </small>
+                </p>
+            </div>
+        </article>
+    </footer>
+</body>
+</html>

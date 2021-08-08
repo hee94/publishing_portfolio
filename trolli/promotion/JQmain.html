@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../promotion/css/main.css">
+    <script src="../promotion/jq/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../promotion/jq/jquery.easie.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Blinker&display=swap" rel="stylesheet">
+   
+    <script>
+        $(function(){
+            let $btn =  $('.menu li a')
+            // let stopbk3 = setInterval(bkAction3,1500);
+            up();
+            $('.arrow2').click(function(){next();});
+            $('.arrow1').click(function(){prve();});
+            $('.top').click(function(){
+                location.reload();
+            });   
+            $btn.click(function(e){
+                    e.preventDefault();
+                    let hr = $(this).attr('href');
+                    $btn.removeClass('on');
+                    $(this).addClass('on');
+                    $('.tab_box').fadeOut(300);
+                    $(hr).fadeIn(300);
+             });
+            
+             $('button').click(function(){
+                    $('.content').animate({'height':'0'},500);
+                    $('#wrap').css('background','linear-gradient(#d2befa, #d0e2fc)');
+                    $('.active').animate({'margin-left':'6%'},200,'easeOutQuint');
+                    $('.main_pd').css('display','block').animate({'opacity':'1'},400);
+                    $('.arrow').css({'opacity':'1','display':'block'});
+                    $('.hide').hide();
+                    $($(this)).animate({'top':'-250px'},2500,'easeOutElastic');
+                    // $('.active').removeClass('active');
+                    
+                    up();
+                    return false;
+             })
+
+            $('.main_pd').click(function(){
+                    let $this = $(this)
+
+                    if( $this.hasClass('active')){
+                    $this.animate({'margin-left':'-50%'},200,'easeOutQuint');
+                    $('button').animate({'top':'150px'},1000,'easeOutElastic');
+                    $('.main_pd').not($this).animate({'opacity':'0'},400,function () {
+                        $('.main_pd').not($this).css('display','none')
+                    });
+                    $('.arrow').css({'opacity':'0','display':'none'});
+                        
+                        if( $this.hasClass('back1')){
+                            $('#wrap').css('background','linear-gradient(#89f7fe,#66a6ff)');
+                            $('.back1').css('display','block');
+                            $('.bottom_img img').animate({'bottom':'-360px'},1000)
+                            setInterval(bkAction3,1500);
+                            $('.cont1').stop().delay(600).animate({'height':'550px'},1000);
+                            setInterval(move,1500);
+                        }else if ($this.hasClass('back2')){
+                            $('#wrap').css('background','linear-gradient(#d787a3,#d9b3bf)');
+                            $('.bottom_img img').animate({'bottom':'-360px'},1000)
+                            $('.cont2').stop().delay(600).animate({'height':'550px'},1000);
+                            setInterval(move,1500);                
+                            setInterval(bkAction2,1500);
+                            $('.back2').css('display','block');
+                            $('.bottom_img img').animate({'opacity':'0'},500)
+                        }else {
+                            $('#wrap').css('background','linear-gradient(#78ffd6,#007991)');
+                            $('.back3').css('display','block');
+                            $('.bottom_img img').animate({'bottom':'-360px'},1000)
+                            setInterval(bkAction,1500);
+                            $('.cont3').stop().delay(600).animate({'height':'550px'},1000);
+                            setInterval(move,1500);
+                        }
+                        }else {
+                            return false;
+                        } 
+            });
+
+            function next(){
+               $('.list').append($('.main_pd:eq(0)'));
+               $('.main_pd').removeClass('active')
+               $('.main_pd:eq(1)').addClass('active ')
+                return false;  
+           }
+          function up(){
+           $('.bottom_img img').stop().animate({'bottom':'0','opacity':'1'},600)
+          };
+           function prve(){
+            $('.list').prepend($('.main_pd:eq(2)'));
+            $('.main_pd').removeClass('active')
+            $('.main_pd:eq(1)').addClass('active')
+            return false;  
+           }
+           
+         function move(){
+             $('.tb_1').animate({'top':'50px','left':'370px'},200,function(){
+                $('.tb_1').animate({'top':'150px','left':'350px'},200)
+             });
+             $('.tab3 p').animate({'color':'#a2ff76'},500,function(){
+                $('.tab3 p').animate({'color':'#fff'},500)
+            });
+         }  
+         function bkAction(){
+             $('#bk3_1').animate({'top':'900px','right':'40%'},1800).animate({'top':'0','right':'70%'},1800)
+             $('#bk3_1').animate({'top':'900px','right':'40%'},1800).animate({'top':'0','right':'10px'},1800)
+             $('#bk3_2').animate({'top':'10px','left':'50%'},1800).animate({'top':'900px','left':'90%'},1800)
+             $('#bk3_2').animate({'top':'10px','left':'50%'},1800).animate({'top':'900px','left':'10%'},1800)
+         }
+         function bkAction2(){
+            $('#bk2_1').animate({'top':'550px'},1500).animate({'top':'100px'},1500);
+            $('#bk2_2').animate({'top':'550px'},1500).animate({'top':'50px'},1500);
+            $('#bk2_3').animate({'top':'550px'},1500).animate({'top':'50px'},1500);
+            $('#bk2_4').animate({'top':'550px'},1500).animate({'top':'50px'},1500);
+            $('#bk2_5').animate({'top':'550px'},1500).animate({'top':'50px'},1500); 
+         }
+         function bkAction3(){
+            $('#bk1_1, #bk1_2').animate({'width':'250px'},700).animate({'width':'0'},300);
+            $('#bk1_3, #bk1_4, #bk1_5').animate({'width':'180px'},900).animate({'width':'0'},500);
+            $('#bk1_7,  #bk1_6').animate({'width':'250px'},800).animate({'width':'0'},400);
+         }
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <div class="top">
+            <img src="../promotion/img/main.png" alt="main" class="main_img">
+            <img src="../promotion/img/logo-trolli.svg" alt="logo" id="logo">
+        </div>
+            <a href="#"  class="arrow1 arrow">
+                <img src="../promotion/img/left-arrow.png"  alt="왼쪽">
+            </a>    
+             <a href="#" class="arrow2 arrow">
+                 <img src="../promotion/img/right-arrow.png"  alt="오른쪽">
+            </a>
+        <div class="list">
+                <img src="../promotion/img/1013.png" alt="제품이미지" class="back1 main_pd">
+                <img src="../promotion/img/1064.png" alt="제품이미지" class="active back2 main_pd">
+                <img src="../promotion/img/1021.png" alt="제품이미지" class="back3 main_pd">
+        </div>
+        <div class="content cont1 ">
+            <ul class="menu">
+                <li><a href="#con1_tab1" class="on" >PRODUCT</a></li>
+                <li><a href="#con1_tab2">SIZE</a></li>
+                <li><a href="#con1_tab3">INGREDIENTS</a></li>
+            </ul>
+        <div class="container">
+                <div id="con1_tab1" class="tab_box tab1 ">
+               
+                    <div>
+                        <h3>SOUR BRITE CRAWLERS</h3>
+                        <span class="tab_txt">
+                            Trolli Sour Brite Crawlers are multi-flavored gummy worms covered in a tongue-twisting sugary goodness, 
+                            striking the perfect balance of sweet and sour in every bite. 
+                            The Original flavors include an assortment of combinations:
+                             Cherry-Lemon, Strawberry-Grape and Orange-Lime.
+                        </span></div>
+                    <img src="../promotion/img/product_01.png" alt="배경" class="tb_1">
+                    </div>
+                    <ul  id="con1_tab2" class="tab_box tab2" >
+                    <li>
+                        <img src="../promotion/img/j1_box.png" alt="제품">
+                        <h4 class="title">3.5 OZ THECATER BOX</h4>
+                    </li>
+                    <li>
+                        <img src="../promotion/img/j1_28.8oz.png" alt="제품">
+                        <h4 class="title">28.8OOX</h4>
+                    </li>
+                    <li><img src="../promotion/img/j1_5oz.png" alt="제품">
+                        <h4 class="title">7.2OX</h4 >
+                    </li>
+                    <li><img src="../promotion/img/j1_pouch.png" alt="제품">
+                        <h4 class="title">3.5OZ POUCH</h4>
+                    </li>
+                </ul>
+                <div   id="con1_tab3" class="tab_box tab3">
+                    <p>Corn Syrup, Sugar, Gelatin, Modified Food Starch (Corn), 
+                        Fumaric Acid, Natural and Artificial Flavors, 
+                        Titanium Dioxide [Color], Yellow 5, Red 40, Yellow 6, Blue 1.</p>
+                </div>
+        </div>
+        </div>
+        <div class="content cont2">
+            <ul class="menu">
+                <li><a href="#con2_tab1" class="on">PRODUCT</a></li>
+                <li><a href="#con2_tab2">SIZE</a></li>
+                <li><a href="#con2_tab3">INGREDIENTS</a></li>
+            </ul>
+                <div class="container">
+                    <div id="con2_tab1" class="tab_box tab1 ">
+                        <div>
+                            <h3>STRAWBERRY PUFFS</h3>
+                        <span class="tab_txt" >Trolli Strawberry Puffs are strawberry flavored gummies with a soft and fluffy texture, coated in a tangy sweet goodness.ime.</span>
+                        </div>
+                        
+                            <img src="../promotion/img/product_02.png" alt="배경" class="tb_1">
+                    </div>
+                
+                    
+                    <ul id="con2_tab2"class="tab_box tab2" >
+                        <li><img src="../promotion/img/1324.png" alt="제품">
+                        <h4 class="title">4.25OZ</h4>
+                        </li>
+                        <li><img src="../promotion/img/1325.png" alt="제품">
+                            <h4 class="title">6.3OZ</h4>
+                        </li>
+                        <li><img src="../promotion/img/1326.png" alt="제품">
+                            <h4 class="title">25.5OZ</h4>
+                        </li>
+                        
+                    </ul>
+                    <div  id="con2_tab3" class="tab_box tab3">
+                        <p>CCorn Syrup, Sugar, Gelatin, Sorbitol, Citric Acid, Lactic Acid, Natural and Artificial Flavors, Sodium Lactate, Titanium Dioxide (Color), Calcium Lactate, Red 40.</p>
+                    </div>
+                </div>
+                   
+                    
+               
+        </div>
+        <div class="content cont3">
+            <ul class="menu">
+                <li><a href="#con3_tab1" class="on">PRODUCT</a></li>
+                <li><a href="#con3_tab2">SIZE</a></li>
+                <li><a href="#con3_tab3">INGREDIENTS</a></li>
+            </ul>
+            <div   class="container">
+                <div id="con3_tab1" class="tab_box tab1 ">
+                    <div>
+                        <h3>SOUR BRITE SLOTHS</h3>
+                        <span class="tab_txt">Trolli Sour Brite Sloths are a weirdly awesome take on your favorite gummy candy. Cute enough to eat, these sloth-shaped gummies come in an assortment 
+                            of Pineapple-Lime, Strawberry-Grape and Blue Raspberry-Berry Punch flavor combinations.</span>
+                </div>
+                    
+                        <img src="../promotion/img/Layer 1.png" alt="배경" class="tb_1">
+                </div>
+                <ul id="con3_tab2" class="tab_box tab2" >
+                    <li><img src="../promotion/img/1256.png" alt="제품">
+                    <h4 class="title">6.30OZ</h4>
+                    </li>
+                    <li><img src="../promotion/img/1021.png" alt="제품" style="width: 120px;">
+                        <h4 class="title">4.25Z</h4>
+                    </li>
+                   
+                </ul>
+                <div id="con3_tab3" class="tab_box tab3">
+                    <p>Corn Syrup, Sugar, Gelatin, Modified Food Starch (Corn), Fumaric Acid, Lactic Acid, 
+                         Sodium Lactate, Titanium Dioxide (Color), Yellow 5, Blue 1, Red 40.</p>
+                </div>
+            </div>
+                
+                   
+        </div> 
+        <button>close</button>
+        <div class="bottom_img">
+            <img src="../promotion/img/up_img.png" alt="background">
+        </div>   
+        <div class="back1 hide">
+            <img src="../promotion/img/crawlers.png" alt=" 배경이미지"  id="bk1_1">
+            <img src="../promotion/img/crawlers.png" alt=" 배경이미지"  id="bk1_2">
+            <img src="../promotion/img/crawlers.png" alt=" 배경이미지"  id="bk1_3">
+            <img src="../promotion/img/crawlers.png" alt=" 배경이미지"  id="bk1_4">
+            <img src="../promotion/img/crawlers.png" alt=" 배경이미지"  id="bk1_5">
+            <img src="../promotion/img/crawlers.png" alt=" 배경이미지"  id="bk1_6">
+            <img src="../promotion/img/crawlers.png" alt=" 배경이미지"  id="bk1_7">
+        </div>
+        <div class="back2 hide">
+            <img src="../promotion/img/jelly.png" alt="배경이미지"  id="bk2_1">
+            <img src="../promotion/img/jelly.png" alt="배경이미지"  id="bk2_2">
+            <img src="../promotion/img/jelly.png" alt="배경이미지"  id="bk2_3">
+            <img src="../promotion/img/jelly.png" alt="배경이미지"  id="bk2_4">
+            <img src="../promotion/img/jelly.png" alt="배경이미지"  id="bk2_5">
+           
+            
+        </div>
+        <div class="back3 hide">
+            <img src="../promotion/img/creatures.png" alt="이미지" id="bk3_1">
+            <img src="../promotion/img/Layer 2.png" alt="이미지" id="bk3_2">
+        </div>
+        <footer>
+            <ul>
+                <li><a href="#">IT'S TROLLI</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">CAREERS</a></li>
+                <li><a href="#">PRIVACY POLICY</a></li>
+                <li><a href="#">TERMS OF USE</a></li>
+                <li><a href="#">SUPPLY CHAIN TRANSPARENCY</a></li>
+            </ul>
+            <div class="ft">
+                <img src="../promotion/img/logo-ferrara.png" alt="logo">
+            <span>
+                <small>© 2021 Ferrara Candy Company. All Rights Reserved.</small>
+            </span>
+            </div>
+            
+        </footer>
+    </div>
+  
+</body>
+</html>
