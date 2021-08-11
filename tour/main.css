@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #2e2e2e;
+}
+ul {
+  list-style: none;
+}
+.claer {
+  clear: both;
+}
+.hidden {
+  display: none;
+}
+input,
+button {
+  outline: none;
+}
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+}
+
+#wrap {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+header {
+  float: left;
+  width: 1920px;
+  height: 226px;
+  margin-left: -400px;
+  background-image: url(/codding/waveimg/back_img.png);
+}
+#topbar {
+  width: 1200px;
+  height: 40px;
+  margin: 0 auto;
+  float: right;
+  position: relative;
+}
+#topbar ul {
+  width: 500px;
+  margin-top: 20px;
+  float: right;
+  margin-right: 200px;
+}
+#topbar li {
+  float: left;
+  padding: 0 18px;
+}
+#topbar a {
+  font-size: 12px;
+}
+#top_search input {
+  margin-top: 18px;
+  padding-left: 20px;
+  height: 25px;
+  line-height: 25px;
+  border: 1px solid rgb(141, 178, 207);
+  border-radius: 30px;
+  color: #999;
+  font-size: 12px;
+  width: 180px;
+}
+#top_search button {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  width: 30px;
+  height: 25px;
+  border: 1px solid rgb(141, 178, 207);
+  background-color: rgb(141, 178, 207);
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+/*nav 로고바꿔야함*/
+nav {
+  width: 1200px;
+  float: left;
+  margin: 0 auto;
+}
+nav img {
+  float: left;
+}
+nav > ul {
+  width: 900px;
+  height: 87px;
+  line-height: 87px;
+  float: left;
+  text-align: center;
+  margin-top: 100px;
+}
+nav ul li {
+  float: left;
+  font-size: 16px;
+  width: 135px;
+  position: relative;
+}
+nav ul li a {
+  display: block;
+  color: #fff;
+  width: 125px;
+}
+nav i {
+  margin-right: 5px;
+  font-size: 20px;
+}
+nav > ul > li:nth-child(2) {
+  margin-left: 30px;
+}
+/*네브 서브*/
+.submenu {
+  width: 125px;
+  text-align: center;
+  position: absolute;
+  background-color: grey;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.8s;
+}
+.submenu a {
+  width: 130px;
+  height: 65px;
+  line-height: 65px;
+  background-color: #447ea8;
+}
+nav > ul > li:hover .submenu {
+  opacity: 1;
+  height: auto;
+}
+nav > ul > li > a:hover,
+.submenu a:hover {
+  background-color: #fff;
+  color: #447ea8;
+}
+/*end header*/
+#search {
+  float: left;
+  width: 1920px;
+  height: 650px;
+  margin-left: -400px;
+  background-image: url(/codding/waveimg/main_img.jpg);
+  background-repeat: no-repeat;
+  background-size: 1920px 650px;
+}
+.search_box {
+  width: 910px;
+  height: 310px;
+  margin: 170px auto 0 auto;
+  background-color: rgb(255, 255, 255, 0.5);
+}
+#search_boxmenu {
+  width: 496px;
+  height: 55px;
+  line-height: 55px;
+  background-color: #447ea8;
+  border-radius: 3px;
+  float: left;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 80px;
+}
+#search_boxmenu li,
+#airplae_route li {
+  float: left;
+}
+#search_boxmenu a {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  width: 124px;
+  height: 55px;
+  border-radius: 5px;
+}
+#search_boxmenu span {
+  margin: 0 5px;
+}
+#search_boxmenu li:first-child a {
+  background-color: #fff;
+  color: #447ea8;
+}
+#search_boxmenu a:hover {
+  background-color: #fff;
+  color: #447ea8;
+}
+#airplae_route {
+  width: 280px;
+  height: 33px;
+  line-height: 33px;
+  background-color: #447ea8;
+  border-radius: 3px;
+  float: left;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 80px;
+}
+/*인기여행지+액티비티*/
+#best {
+  float: left;
+  width: 1100px;
+  height: auto;
+  margin: 10px 0;
+}
+#best_palce,
+#best_activity {
+  float: left;
+  margin-top: 80px;
+  width: 1100px;
+  position: relative;
+}
+#best_activity {
+  margin-top: 90px;
+}
+
+#best_palce h1,
+#best_activity h1 {
+  font-size: 25px;
+  width: 170px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  padding: 10px;
+  background-image: url(/codding/waveimg/best_back.png);
+  background-repeat: no-repeat;
+}
+.palce_img,
+.activity_img {
+  height: 285px;
+  float: left;
+}
+.palce_img > img,
+.activity_img > img {
+  margin-left: 40px;
+}
+#margin,
+#margin2 {
+  margin-left: 35px;
+}
+.palcename1,
+.activityname1 {
+  position: absolute;
+  font-size: 25px;
+  top: 300px;
+  left: 50px;
+  color: #fff;
+}
+.palcename2,
+.activityname2 {
+  position: absolute;
+  font-size: 25px;
+  top: 300px;
+  left: 320px;
+  color: #fff;
+}
+.palcename3,
+.activityname3 {
+  color: #fff;
+  position: absolute;
+  font-size: 25px;
+  top: 300px;
+  left: 585px;
+}
+.palcename4,
+.activityname4 {
+  color: #fff;
+  position: absolute;
+  font-size: 25px;
+  top: 300px;
+  left: 850px;
+}
+/*2줄짜리*/
+.activityname4,
+.activityname1 {
+  top: 293px;
+  line-height: 20px;
+  font-size: 22px;
+}
+
+.nextbtn_2 {
+  position: absolute;
+  top: 180px;
+  right: 2px;
+  font-size: 30px;
+  color: #ccc;
+}
+.nextbtn_1 {
+  position: absolute;
+  top: 180px;
+  left: 3px;
+  font-size: 30px;
+  color: #ccc;
+}
+/*#event {
+  float: left;
+  width: 1920px;
+  height: 350px;
+  margin: 90px auto;
+  background: #d3edff;
+}*/
+
+.sns a img {
+  width: 100px;
+  height: 100px;
+}
