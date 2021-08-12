@@ -90,11 +90,15 @@ function moveNext(){
            document.querySelector('.protfolie4').style.opacity ='1';
          
            btnAddOn[3].classList.add('btn_on');
-        } else {
+        }else if (NowWebIndex === 'img/3_web.png'){
+           mockUpWeb.setAttribute('src', 'img/frozen_web.png');
+           mockUpM.setAttribute('src', 'img/frozen_m.png');
+           document.querySelector('.protfolie5').style.opacity ='1';
+           btnAddOn[3].classList.add('btn_on'); 
+        }else {
            mockUpWeb.setAttribute('src', 'img/0_web.png');
            mockUpM.setAttribute('src', 'img/0_m.png');
            document.querySelector('.protfolie1').style.opacity ='1';
-         
           btnAddOn[0].classList.add('btn_on');
         }
     }
@@ -104,14 +108,12 @@ function movePrve(){
     let NowWebIndex = mockUpWeb.getAttribute('src');
     let btnAddOn = document.querySelectorAll('.more_btn');
     for(let j = 1; j<=thumbnailList.length; j++){
-       
         btnAddOn[j-1].classList.remove('btn_on');
         document.querySelector(`.protfolie${j}`).style.opacity = '0';
          if (NowWebIndex === 'img/1_web.png'){
             mockUpWeb.setAttribute('src', 'img/0_web.png');
             mockUpM.setAttribute('src', 'img/0_m.png');
             document.querySelector('.protfolie1').style.opacity ='1';
-              
              btnAddOn[0].classList.add('btn_on');
          }else if (NowWebIndex === 'img/2_web.png'){
             mockUpWeb.setAttribute('src', 'img/1_web.png');
@@ -123,15 +125,18 @@ function movePrve(){
             mockUpWeb.setAttribute('src', 'img/2_web.png');
             mockUpM.setAttribute('src', 'img/2_m.png');
             document.querySelector('.protfolie3').style.opacity ='1';
-              
             btnAddOn[2].classList.add('btn_on');
-         }else{
+         }else if (NowWebIndex === 'img/frozen_web.png'){
             mockUpWeb.setAttribute('src', 'img/3_web.png');
             mockUpM.setAttribute('src', 'img/3_m.png');
             document.querySelector('.protfolie4').style.opacity ='1';
-                
             btnAddOn[3].classList.add('btn_on');
-         };
+         }else{
+            mockUpWeb.setAttribute('src', 'img/frozen_web.png');
+            mockUpM.setAttribute('src', 'img/frozen_m.png');
+            document.querySelector('.protfolie5').style.opacity ='1';
+            btnAddOn[4].classList.add('btn_on');
+         }
     };
 };
 function showPtbox(i){
