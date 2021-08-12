@@ -94,7 +94,12 @@ function moveNext(){
            mockUpWeb.setAttribute('src', 'img/frozen_web.png');
            mockUpM.setAttribute('src', 'img/frozen_m.png');
            document.querySelector('.protfolie5').style.opacity ='1';
-           btnAddOn[3].classList.add('btn_on'); 
+           btnAddOn[4].classList.add('btn_on'); 
+        }else if (NowWebIndex === 'img/frozen_web.png'){
+           mockUpWeb.setAttribute('src', 'img/js_web.png');
+           mockUpM.setAttribute('src', 'img/2_m.png');
+           document.querySelector('.protfolie6').style.opacity ='1';
+           btnAddOn[5].classList.add('btn_on'); 
         }else {
            mockUpWeb.setAttribute('src', 'img/0_web.png');
            mockUpM.setAttribute('src', 'img/0_m.png');
@@ -131,11 +136,16 @@ function movePrve(){
             mockUpM.setAttribute('src', 'img/3_m.png');
             document.querySelector('.protfolie4').style.opacity ='1';
             btnAddOn[3].classList.add('btn_on');
-         }else{
+         }else if (NowWebIndex === 'img/js_web.png'){
             mockUpWeb.setAttribute('src', 'img/frozen_web.png');
             mockUpM.setAttribute('src', 'img/frozen_m.png');
             document.querySelector('.protfolie5').style.opacity ='1';
             btnAddOn[4].classList.add('btn_on');
+         }else{
+            mockUpWeb.setAttribute('src', 'img/js_web.png');
+            mockUpM.setAttribute('src', 'img/2_m.png');
+            document.querySelector('.protfolie6').style.opacity ='1';
+            btnAddOn[5].classList.add('btn_on');
          }
     };
 };

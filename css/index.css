@@ -338,7 +338,7 @@ header h3 {
   justify-content: space-between;
 }
 .thumbnail_list li {
-  width: 18%;
+  width: 15%;
   height: 100px;
   border: 1px solid #000;
   text-align: center;
@@ -453,7 +453,8 @@ header h3 {
 .protfolie2,
 .protfolie3,
 .protfolie4,
-.protfolie5 {
+.protfolie5,
+.protfolie6{
   opacity: 0;
 }
 .pf_info > div {
